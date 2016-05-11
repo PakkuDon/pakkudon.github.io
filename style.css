@@ -23,6 +23,7 @@ html, body {
 }
 
 .container {
+    margin: auto;
     width: 80%;
 }
 
@@ -30,17 +31,17 @@ hr.line {
     border: 1px solid #FFF;
 }
 
-.splash-screen {
+#splash {
     background-color: #222;
     color: #EEE;
 }
 
-.splash-screen a {
+#splash a {
     color: #EEE;
     text-decoration: none;
 }
 
-.splash-screen .fa {
+#splash .fa {
     font-size: 400%;
     margin: 10px 25px;
 }
@@ -58,4 +59,27 @@ hr.line {
 .profiles {
     margin: 10px;
     padding: 20px;
+}
+
+nav {
+    background-color: #000;
+    color: #EEE;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+}
+
+nav a {
+    color: #EEE;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
 }
