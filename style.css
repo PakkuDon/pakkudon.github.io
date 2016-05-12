@@ -31,17 +31,21 @@ hr.line {
     border: 1px solid #FFF;
 }
 
-#splash {
+#home {
     background-color: #222;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('dist/img/bg-city.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     color: #EEE;
 }
 
-#splash a {
+#home a {
     color: #EEE;
     text-decoration: none;
 }
 
-#splash .fa {
+#home .fa {
     font-size: 400%;
     margin: 10px 25px;
 }
