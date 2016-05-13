@@ -1,3 +1,9 @@
+/* Colors */
+$white: #FFF;
+$lightGrey: #EEE;
+$darkGrey: #222;
+$black: #000;
+
 html, body {
     margin: 0;
     padding: 0;
@@ -27,27 +33,49 @@ html, body {
     width: 80%;
 }
 
-hr.line {
-    border: 1px solid #FFF;
+nav {
+    background-color: $black;
+    color: $lightGrey;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    
+    a {
+        color: $lightGrey;
+        text-decoration: none;
+        display: block;
+    }
+    
+    ul {
+        margin: 0;
+        li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+    }
 }
 
 #home {
-    background-color: #222;
+    background-color: $darkGrey;
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../../dist/img/bg-city.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: #EEE;
-}
-
-#home a {
-    color: #EEE;
-    text-decoration: none;
-}
-
-#home .fa {
-    font-size: 400%;
-    margin: 10px 25px;
+    color: $lightGrey;
+    
+    a {
+        color: $lightGrey;
+        text-decoration: none;
+    }
+    
+    .fa {
+        font-size: 400%;
+        margin: 10px 25px;
+    }
+    
+    hr {
+        border: 1px solid $white;
+    }
 }
 
 .title {
@@ -63,27 +91,4 @@ hr.line {
 .profiles {
     margin: 10px;
     padding: 20px;
-}
-
-nav {
-    background-color: #000;
-    color: #EEE;
-    position: fixed;
-    width: 100%;
-    text-align: right;
-}
-
-nav a {
-    color: #EEE;
-    text-decoration: none;
-    display: block;
-}
-
-nav ul {
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 10px 20px;
 }

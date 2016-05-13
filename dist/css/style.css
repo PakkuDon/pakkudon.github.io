@@ -1,3 +1,4 @@
+/* Colors */
 html, body {
   margin: 0;
   padding: 0;
@@ -28,8 +29,21 @@ html, body {
   margin: auto;
   width: 80%; }
 
-hr.line {
-  border: 1px solid #FFF; }
+nav {
+  background-color: #000;
+  color: #EEE;
+  position: fixed;
+  width: 100%;
+  text-align: right; }
+  nav a {
+    color: #EEE;
+    text-decoration: none;
+    display: block; }
+  nav ul {
+    margin: 0; }
+    nav ul li {
+      display: inline-block;
+      padding: 10px 20px; }
 
 #home {
   background-color: #222;
@@ -39,14 +53,14 @@ hr.line {
   background-size: cover;
   background-attachment: fixed;
   color: #EEE; }
-
-#home a {
-  color: #EEE;
-  text-decoration: none; }
-
-#home .fa {
-  font-size: 400%;
-  margin: 10px 25px; }
+  #home a {
+    color: #EEE;
+    text-decoration: none; }
+  #home .fa {
+    font-size: 400%;
+    margin: 10px 25px; }
+  #home hr {
+    border: 1px solid #FFF; }
 
 .title {
   font-family: 'Lato', sans-serif;
@@ -59,22 +73,3 @@ hr.line {
 .profiles {
   margin: 10px;
   padding: 20px; }
-
-nav {
-  background-color: #000;
-  color: #EEE;
-  position: fixed;
-  width: 100%;
-  text-align: right; }
-
-nav a {
-  color: #EEE;
-  text-decoration: none;
-  display: block; }
-
-nav ul {
-  margin: 0; }
-
-nav ul li {
-  display: inline-block;
-  padding: 10px 20px; }
