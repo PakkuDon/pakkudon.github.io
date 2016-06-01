@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
-    <body>
+    <body ng-app="Portfolio">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -38,33 +38,69 @@
                 </div>
             </div>
         </div>
-        <div id="about" class="">
+        <div id="about" ng-controller="SkillsetController as skillCtrl">
             <div class="container">
                 <h1 class="title text-center">About</h1>
-                <h2>Languages</h2>
-                <div class="tag-list">
-                    <div class="tag">Language 1</div>
-                    <div class="tag">Language 2</div>
-                    <div class="tag">Language 3</div>
-                    <div class="tag">Language 4</div>
-                    <div class="tag">Language 5</div>
-                    <div class="tag">Language 6</div>
-                </div>
-                <h2>Frameworks / Libraries</h2>
-                <div class="tag-list">
-                    <div class="tag">Framework 1</div>
-                    <div class="tag">Framework 2</div>
-                </div>
-                <h2>Tools</h2>
-                <div class="tag-list">
-                    <div class="tag">Tool 1</div>
-                    <div class="tag">Tool 2</div>
-                </div>
-                <h2>Other</h2>
-                <div class="tag-list">
-                    <div class="tag">Other item 1</div>
-                    <div class="tag">Other item 2</div>
-                </div>
+                <section>
+                    <h2>Languages</h2>
+                    <div class="tag-list">
+                        <h3>Proficient in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getLanguages()['Proficient in']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Some experience with: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getLanguages()['Some experience with']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Dabbled in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getLanguages()['Dabbled in']">{{ language }}</div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Frameworks / Libraries</h2>
+                    <div class="tag-list">
+                        <h3>Proficient in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getFrameworks()['Proficient in']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Some experience with: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getFrameworks()['Some experience with']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Dabbled in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getFrameworks()['Dabbled in']">{{ language }}</div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Tools</h2>
+                    <div class="tag-list">
+                        <h3>Proficient in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getTools()['Proficient in']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Some experience with: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getTools()['Some experience with']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Dabbled in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getTools()['Dabbled in']">{{ language }}</div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Misc.</h2>
+                    <div class="tag-list">
+                        <h3>Proficient in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getGeneralSkills()['Proficient in']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Some experience with: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getGeneralSkills()['Some experience with']">{{ language }}</div>
+                    </div>
+                    <div class="tag-list">
+                        <h3>Dabbled in: </h3>
+                        <div class="tag" ng-repeat="language in skillCtrl.getGeneralSkills()['Dabbled in']">{{ language }}</div>
+                    </div>
+                </section>
             </div>
         </div>
         <div id="projects" class="">
@@ -90,5 +126,8 @@
                 </div>
             </div>
         </div>
+        <script src="dist/js/vendor.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers/SkillsetController.js"></script>
     </body>
 </html>
