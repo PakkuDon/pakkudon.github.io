@@ -69,25 +69,16 @@
                 </section>
             </div>
         </div>
-        <div id="projects" class="">
+        <div id="projects" ng-controller="ProjectsController as projectsCtrl">
             <div class="container">
                 <h1 class="title text-center">Projects</h1>
-                <div class="project">
+                <div class="project" ng-repeat="project in projectsCtrl.getProjects()">
                     <div class="thumbnail">
-                        <img src="http://placehold.it/350x150" />
+                        <img ng-src="{{ project.image_set[0] }}" />
                     </div>
                     <div class="details">
-                        <div class="name">Test Project</div>
-                        <div class="description">Description for test project</div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/350x150" />
-                    </div>
-                    <div class="details">
-                        <div class="name">Test Project 2</div>
-                        <div class="description">Description for test project 2</div>
+                        <div class="title" ng-bind="project.name"></div>
+                        <div class="description" ng-bind="project.name"></div>
                     </div>
                 </div>
             </div>
@@ -95,5 +86,6 @@
         <script src="dist/js/vendor.js"></script>
         <script src="app/app.js"></script>
         <script src="app/controllers/SkillsetController.js"></script>
+        <script src="app/controllers/ProjectsController.js"></script>
     </body>
 </html>

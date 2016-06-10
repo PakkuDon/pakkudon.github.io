@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Project 1",
+    "company": "ABC Company",
+    "start_date": "2016-05-03",
+    "end_date": "2016-05-05",
+    "image_set": [
+      "http://placehold.it/350x150"
+    ],
+    "description": "Description for Project 1",
+    "notes": [
+    ]
+  },
+  {
+    "name": "Project 2",
+    "company": "",
+    "start_date": "2016-05-03",
+    "end_date": "",
+    "image_set": [
+      "http://placehold.it/350x150"
+    ],
+    "description": "Description for Project 2",
+    "notes": [
+      "Placeholder note",
+      "Placeholder note 2"
+    ]
+  }
+]
