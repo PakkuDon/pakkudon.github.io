@@ -43,62 +43,28 @@
                 <h1 class="title text-center">About</h1>
                 <section>
                     <h2>Languages</h2>
-                    <div class="tag-list">
-                        <h3>Proficient in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getLanguages()['Proficient in']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Some experience with: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getLanguages()['Some experience with']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Dabbled in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getLanguages()['Dabbled in']">{{ language }}</div>
+                    <div class="tag-list" ng-repeat="skillGroup in skillCtrl.getLanguages()">
+                        <h3>{{ skillGroup.level }}: </h3>
+                        <div class="tag" ng-repeat="language in skillGroup.items">{{ language }}</div>
                     </div>
                 </section>
                 <section>
                     <h2>Frameworks / Libraries</h2>
-                    <div class="tag-list">
-                        <h3>Proficient in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getFrameworks()['Proficient in']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Some experience with: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getFrameworks()['Some experience with']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Dabbled in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getFrameworks()['Dabbled in']">{{ language }}</div>
+                    <div class="tag-list" ng-repeat="skillGroup in skillCtrl.getFrameworks()">
+                        <h3>{{ skillGroup.level }}: </h3>
+                        <div class="tag" ng-repeat="framework in skillGroup.items">{{ framework }}</div>
                     </div>
                 </section>
                 <section>
                     <h2>Tools</h2>
                     <div class="tag-list">
-                        <h3>Proficient in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getTools()['Proficient in']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Some experience with: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getTools()['Some experience with']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Dabbled in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getTools()['Dabbled in']">{{ language }}</div>
+                        <div class="tag" ng-repeat="tool in skillCtrl.getTools()">{{ tool }}</div>
                     </div>
                 </section>
                 <section>
                     <h2>Misc.</h2>
                     <div class="tag-list">
-                        <h3>Proficient in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getGeneralSkills()['Proficient in']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Some experience with: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getGeneralSkills()['Some experience with']">{{ language }}</div>
-                    </div>
-                    <div class="tag-list">
-                        <h3>Dabbled in: </h3>
-                        <div class="tag" ng-repeat="language in skillCtrl.getGeneralSkills()['Dabbled in']">{{ language }}</div>
+                        <div class="tag" ng-repeat="item in skillCtrl.getGeneralSkills()">{{ item }}</div>
                     </div>
                 </section>
             </div>

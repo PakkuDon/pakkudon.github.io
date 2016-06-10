@@ -1,33 +1,47 @@
 {
-    "languages": {
-        "Proficient in": [
-            "JavaScript", "HTML", "CSS", "Java"
-        ],
-        "Some experience with": [
-            "C#", "PHP", "MySQL"
-        ],
-        "Dabbled in": [
-            "Python", "Bash", "XML", "XPath"
-        ]
+  "languages": [
+    {
+      "level": "Proficient in",
+      "items" :[
+        "JavaScript", "HTML", "CSS", "Java"
+      ]
     },
-    "frameworks": {
-        "Proficient in": [
-        ],
-        "Some experience with": [
-            "jQuery", "AngularJS", "React", "ASP.NET MVC"
-        ],
-        "Dabbled in": [
-            "Bootstrap", "Jasmine", "Node.js", "Express", "D3.js", "Entity Framework"
-        ]
+    {
+      "level": "Some experience with",
+      "items" :[
+        "C#", "PHP", "MySQL"
+      ]
     },
-    "tools": {
-        "Some experience with": [
-            "Git", "Visual Studio", "Eclipse", "Vim"
-        ]
-    },
-    "general": {
-        "Some experience with": [
-            "Design patterns", "Test-driven development", "UML"
-        ]
+    {
+      "level": "Dabbled in",
+      "items" :[
+        "Python", "Bash", "XML", "XPath"
+      ]
     }
+  ],
+  "frameworks": [
+    {
+      "level": "Proficient in",
+      "items" :[
+      ]
+    },
+    {
+      "level": "Some experience with",
+      "items" :[
+        "jQuery", "AngularJS", "React", "ASP.NET MVC"
+      ]
+    },
+    {
+      "level": "Dabbled in",
+      "items" :[
+        "Bootstrap", "Jasmine", "Node.js", "Express", "D3.js", "Entity Framework"
+      ]
+    }
+  ],
+  "tools": [
+    "Git", "Visual Studio", "Eclipse", "Vim"
+  ],
+  "general": [
+    "Design patterns", "Test-driven development", "UML"
+  ]
 }

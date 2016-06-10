@@ -13,14 +13,14 @@ angular.module('Portfolio').controller('SkillsetController',
     }
     
     this.getFrameworks = function() {
-        return skillset.frameworks || {};
+        return skillset.frameworks || [];
     }
     
     this.getTools = function() {
-        return skillset.tools || {};
+        return skillset.tools || [];
     }
     
     this.getGeneralSkills = function() {
-        return skillset.general || {};
+        return skillset.general || [];
     }
 }]);
