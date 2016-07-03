@@ -112,7 +112,6 @@ nav {
 .title {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    font-size: 400%;
 }
 
 .subheading {
@@ -124,36 +123,50 @@ nav {
     padding: 20px;
 }
 
+.project-list {
+    text-align: auto;
+}
+
 .project {
-    border: 1px solid $grey;
-    padding: 20px;
-    margin: 10px 0px;
-    border-radius: 1em;
+    width: 350px;
+    margin: 10px;
+    display: inline-block;
     
     .thumbnail {
-        width: 30%;
-        
         img {
             width: 100%;
+            border-bottom: 1px solid #000;
         }
     }
     
-    .thumbnail, .details {
-        display: inline-block;
-        vertical-align: top;
+    .title {
+        text-align: center;
+        font-weight: bold;
+        padding: 5px 0px;
+        color: $darkBlue;
+
+        &:hover {
+            color: $blue;
+        }
     }
 }
 
 .tag {
-    background-color: $lightGrey;
-    border: 1px solid $grey;
+    background-color: $darkBlue;
+    color: $white;
+    border: transparent;
     border-radius: 0.5em;
     padding: 5px 10px;
     margin-right: 2px;
     display: inline-block;
     
     &:hover {
-        background-color: $white;
+        background-color: $blue;
     }
 }
 
+@media (max-width: 480px) {
+    .project {
+        width: 100%;
+    }
+}

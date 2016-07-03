@@ -80,8 +80,7 @@ nav {
 
 .title {
   font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  font-size: 400%; }
+  text-transform: uppercase; }
 
 .subheading {
   font-size: 200%; }
@@ -90,25 +89,35 @@ nav {
   margin: 10px;
   padding: 20px; }
 
+.project-list {
+  text-align: auto; }
+
 .project {
-  border: 1px solid #888;
-  padding: 20px;
-  margin: 10px 0px;
-  border-radius: 1em; }
-  .project .thumbnail {
-    width: 30%; }
-    .project .thumbnail img {
-      width: 100%; }
-  .project .thumbnail, .project .details {
-    display: inline-block;
-    vertical-align: top; }
+  width: 350px;
+  margin: 10px;
+  display: inline-block; }
+  .project .thumbnail img {
+    width: 100%;
+    border-bottom: 1px solid #000; }
+  .project .title {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0px;
+    color: #369; }
+    .project .title:hover {
+      color: #69C; }
 
 .tag {
-  background-color: #EEE;
-  border: 1px solid #888;
+  background-color: #369;
+  color: #FFF;
+  border: transparent;
   border-radius: 0.5em;
   padding: 5px 10px;
   margin-right: 2px;
   display: inline-block; }
   .tag:hover {
-    background-color: #FFF; }
+    background-color: #69C; }
+
+@media (max-width: 480px) {
+  .project {
+    width: 100%; } }

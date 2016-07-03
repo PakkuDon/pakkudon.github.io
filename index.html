@@ -72,13 +72,12 @@
         <div id="projects" ng-controller="ProjectsController as projectsCtrl">
             <div class="container">
                 <h1 class="title text-center">Projects</h1>
-                <div class="project" ng-repeat="project in projectsCtrl.getProjects()">
-                    <div class="thumbnail">
-                        <img ng-src="{{ project.image_set[0] }}" />
-                    </div>
-                    <div class="details">
+                <div class="project-list">
+                    <div class="project" ng-repeat="project in projectsCtrl.getProjects()">
+                        <div class="thumbnail">
+                            <img ng-src="{{ project.image_set[0] }}" />
+                        </div>
                         <div class="title" ng-bind="project.name"></div>
-                        <div class="description" ng-bind="project.name"></div>
                     </div>
                 </div>
             </div>
