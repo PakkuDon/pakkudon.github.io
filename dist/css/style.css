@@ -37,6 +37,10 @@ body {
   margin: auto;
   width: 80%; }
 
+section .title {
+  padding-top: 60px;
+  font-size: 1.75em; }
+
 nav {
   background-color: #000;
   color: #EEE;
@@ -99,12 +103,12 @@ nav {
   .project .thumbnail img {
     width: 100%;
     border-bottom: 1px solid #000; }
-  .project .title {
+  .project .name {
     text-align: center;
     font-weight: bold;
     padding: 5px 0px;
     color: #369; }
-    .project .title:hover {
+    .project .name:hover {
       color: #69C; }
 
 .tag {
