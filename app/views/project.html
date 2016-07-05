@@ -1,0 +1,31 @@
+<section>
+    {{ project = projectCtrl.getProject(); '' }}
+    <div class="container">
+        <header class="text-center">
+            <h1 class="title" ng-bind="project.name"></h1>
+            <em>{{ project.categories.join(', ') }}</em>
+            <div class="carousel">
+                <img ng-src="{{ project.image_set[0] }}" alt="snapshot of project" />
+            </div>
+            <div>
+                {{ project.company }}
+            </div>
+            <div>
+                <time>{{ project.start_date }} - {{ project.end_date }}</time>
+            </div>
+        </header>
+        <summary>
+            <h2>
+                Description
+            </h2>
+            {{ project.description }}
+            <ul>
+                <li ng-repeat="note in project.notes">{{ note }}</li>
+            </ul>
+        </summary>
+        <footer>
+            <a class="tag" target="_blank" ng-href="{{ project.website }}" ng-show="project.website">View website</a>
+            <a class="tag" target="_blank" ng-href="{{ project.source_code }}" ng-show="project.source_code">Source code</a>
+        </footer>
+    </div>
+</section>

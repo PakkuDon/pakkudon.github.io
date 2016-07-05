@@ -1,7 +1,11 @@
 [
   {
+    "id": "project-1",
     "name": "Project 1",
     "company": "ABC Company",
+    "categories": [
+      "hackathon", "space"
+    ],
     "start_date": "2016-05-03",
     "end_date": "2016-05-05",
     "image_set": [
@@ -9,11 +13,20 @@
     ],
     "description": "Description for Project 1",
     "notes": [
-    ]
+    ],
+    "tags": [
+      "JavaScript", "React", "Sass"
+    ],
+    "website": "http://github.com",
+    "source_code": ""
   },
   {
+    "id": "project-2",
     "name": "Project 2",
     "company": "",
+    "categories": [
+      "hackathon", "health"
+    ],
     "start_date": "2016-05-03",
     "end_date": "",
     "image_set": [
@@ -23,6 +36,11 @@
     "notes": [
       "Placeholder note",
       "Placeholder note 2"
-    ]
+    ],
+    "tags": [
+      "HTML", "CSS", "JavaScript"
+    ],
+    "website": "",
+    "source_code": "https://github.com/PakkuDon"
   }
 ]

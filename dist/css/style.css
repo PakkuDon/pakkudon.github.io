@@ -118,7 +118,8 @@ nav {
   border-radius: 0.5em;
   padding: 5px 10px;
   margin-right: 2px;
-  display: inline-block; }
+  display: inline-block;
+  text-decoration: none; }
   .tag:hover {
     background-color: #69C; }
 

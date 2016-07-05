@@ -12,9 +12,9 @@
     <body ng-app="Portfolio">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="./#/#home">Home</a></li>
+                <li><a href="./#/#about">About</a></li>
+                <li><a href="./#/#projects">Projects</a></li>
             </ul>
         </nav>
         <section id="home" class="fill-screen align-center text-center">
@@ -38,53 +38,11 @@
                 </div>
             </div>
         </section>
-        <section id="about" ng-controller="SkillsetController as skillCtrl">
-            <div class="container">
-                <h1 class="title text-center">About</h1>
-                <div>
-                    <h2>Languages</h2>
-                    <div class="tag-list" ng-repeat="skillGroup in skillCtrl.getLanguages()">
-                        <h3>{{ skillGroup.level }}: </h3>
-                        <div class="tag" ng-repeat="language in skillGroup.items">{{ language }}</div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Frameworks / Libraries</h2>
-                    <div class="tag-list" ng-repeat="skillGroup in skillCtrl.getFrameworks()">
-                        <h3>{{ skillGroup.level }}: </h3>
-                        <div class="tag" ng-repeat="framework in skillGroup.items">{{ framework }}</div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Tools</h2>
-                    <div class="tag-list">
-                        <div class="tag" ng-repeat="tool in skillCtrl.getTools()">{{ tool }}</div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Misc.</h2>
-                    <div class="tag-list">
-                        <div class="tag" ng-repeat="item in skillCtrl.getGeneralSkills()">{{ item }}</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="projects" ng-controller="ProjectsController as projectsCtrl">
-            <div class="container">
-                <h1 class="title text-center">Projects</h1>
-                <div class="project-list">
-                    <div class="project" ng-repeat="project in projectsCtrl.getProjects()">
-                        <div class="thumbnail">
-                            <img ng-src="{{ project.image_set[0] }}" />
-                        </div>
-                        <div class="name" ng-bind="project.name"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div ng-view></div>
         <script src="dist/js/vendor.js"></script>
         <script src="app/app.js"></script>
         <script src="app/controllers/SkillsetController.js"></script>
         <script src="app/controllers/ProjectsController.js"></script>
+        <script src="app/controllers/ProjectController.js"></script>
     </body>
 </html>
