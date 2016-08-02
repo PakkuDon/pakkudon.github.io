@@ -1,46 +1,107 @@
 [
   {
-    "id": "project-1",
-    "name": "Project 1",
-    "company": "ABC Company",
+    "id": "right-click-dashboard",
+    "name": "Right Click - Admin Dashboard",
+    "company": "Random Hacks of Kindness (Summer, 2015)",
     "categories": [
-      "hackathon", "space"
+      "hackathon", "rhok"
     ],
-    "start_date": "2016-05-03",
-    "end_date": "2016-05-05",
+    "start_date": "5 Dec 2015",
+    "end_date": "Ongoing",
     "image_set": [
       "http://placehold.it/350x150"
     ],
-    "description": "Description for Project 1",
+    "description": "Helped develop admin dashboard used to review lesson activity",
+    "notes": [
+    ],
+    "tags": [
+      "JavaScript", "React", "D3.js"
+    ],
+    "website": "",
+    "source_code": "https://github.com/RHoKAustralia/rightclick-webapp"
+  },
+  {
+    "id": "free-code-camp-portfolio",
+    "name": "Free Code Camp Portfolio",
+    "company": "",
+    "categories": [
+      "self-study"
+    ],
+    "start_date": "5 Mar 2016",
+    "end_date": "Ongoing",
+    "image_set": [
+      "http://placehold.it/350x150"
+    ],
+    "description": "",
+    "notes": [
+    ],
+    "tags": [
+      "HTML", "CSS", "JavaScript", "React", "D3.js", "Express"
+    ],
+    "website": "https://www.freecodecamp.com/pakkudon",
+    "source_code": ""
+  },
+  {
+    "id": "suburb-health-index",
+    "name": "CommHealth - Suburb Health Index",
+    "company": "",
+    "categories": [
+      "hackathon", "health"
+    ],
+    "start_date": "",
+    "end_date": "",
+    "image_set": [
+      "http://placehold.it/350x150"
+    ],
+    "description": "",
+    "notes": [
+    ],
+    "tags": [
+      
+    ],
+    "website": "http://constructnow.io/",
+    "source_code": "https://github.com/dcasousa/SubHealthIndex"
+  },
+  {
+    "id": "flyto",
+    "name": "FlyTo",
+    "company": "",
+    "categories": [
+      "hackathon", "space"
+    ],
+    "start_date": "23 Apr 2016",
+    "end_date": "24 Apr 2016",
+    "image_set": [
+      "http://placehold.it/350x150"
+    ],
+    "description": "",
+    "notes": [
+    ],
+    "tags": [
+      "JavaScript", "React"
+    ],
+    "website": "",
+    "source_code": "https://github.com/Space-naps/ui"
+  },
+  {
+    "id": "australia-for-dolphins-video-petitions",
+    "name": "Australia for Dolphins - Video petitions",
+    "company": "Random Hacks of Kindness (Winter, 2016)",
+    "categories": [
+      "hackathon", "rhok"
+    ],
+    "start_date": "4 Jun 2016",
+    "end_date": "Ongoing",
+    "image_set": [
+      "http://placehold.it/350x150"
+    ],
+    "description": "Built a site where people could submit recordings of themselves as signatures to a petition.",
     "notes": [
     ],
     "tags": [
       "JavaScript", "React", "Sass"
     ],
-    "website": "http://github.com",
-    "source_code": ""
-  },
-  {
-    "id": "project-2",
-    "name": "Project 2",
-    "company": "",
-    "categories": [
-      "hackathon", "health"
-    ],
-    "start_date": "2016-05-03",
-    "end_date": "",
-    "image_set": [
-      "http://placehold.it/350x150"
-    ],
-    "description": "Description for Project 2",
-    "notes": [
-      "Placeholder note",
-      "Placeholder note 2"
-    ],
-    "tags": [
-      "HTML", "CSS", "JavaScript"
-    ],
     "website": "",
-    "source_code": "https://github.com/PakkuDon"
+    "source_code": "https://github.com/RHoKAustralia/australia-4-dolphins"
   }
 ]
