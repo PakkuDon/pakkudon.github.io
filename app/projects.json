@@ -9,7 +9,11 @@
     "start_date": "5 Dec 2015",
     "end_date": "Ongoing",
     "image_set": [
-      "http://placehold.it/350x150"
+      "right-click-dash-1.PNG",
+      "right-click-dash-2.PNG",
+      "right-click-dash-3.PNG",
+      "right-click-dash-4.PNG",
+      "right-click-dash-5.PNG"
     ],
     "description": "Helped develop admin dashboard used to review lesson activity",
     "notes": [
@@ -30,7 +34,12 @@
     "start_date": "5 Mar 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "http://placehold.it/350x150"
+      "fcc-d3-1.PNG",
+      "fcc-d3-3.PNG",
+      "fcc-d3-4.PNG",
+      "fcc-d3-5.PNG",
+      "fcc-quote.PNG",
+      "fcc-react-1.PNG"
     ],
     "description": "",
     "notes": [
@@ -42,27 +51,6 @@
     "source_code": ""
   },
   {
-    "id": "suburb-health-index",
-    "name": "CommHealth - Suburb Health Index",
-    "company": "",
-    "categories": [
-      "hackathon", "health"
-    ],
-    "start_date": "",
-    "end_date": "",
-    "image_set": [
-      "http://placehold.it/350x150"
-    ],
-    "description": "",
-    "notes": [
-    ],
-    "tags": [
-      "HTML", "CSS", "JavaScript"
-    ],
-    "website": "http://constructnow.io/",
-    "source_code": "https://github.com/dcasousa/SubHealthIndex"
-  },
-  {
     "id": "flyto",
     "name": "FlyTo",
     "company": "",
@@ -72,7 +60,7 @@
     "start_date": "23 Apr 2016",
     "end_date": "24 Apr 2016",
     "image_set": [
-      "http://placehold.it/350x150"
+      "flyto-1.PNG"
     ],
     "description": "",
     "notes": [
@@ -93,7 +81,7 @@
     "start_date": "4 Jun 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "http://placehold.it/350x150"
+      "a4d-1.PNG"
     ],
     "description": "Built a site where people could submit recordings of themselves as signatures to a petition.",
     "notes": [

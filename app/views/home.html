@@ -36,7 +36,7 @@
             <a ng-repeat="project in projectsCtrl.getProjects()" ng-href="#/project/{{ project.id }}">
                 <div class="project">
                     <div class="thumbnail">
-                        <img ng-src="{{ project.image_set[0] }}" />
+                        <img ng-style="{ 'background-image': 'url(\'dist/img/portfolio/{{ project.image_set[0] }}\')' }" />
                     </div>
                     <div class="name" ng-bind="project.name"></div>
                 </div>

@@ -137,12 +137,23 @@ nav {
 .project {
     width: 350px;
     margin: 10px;
+    border: 1px solid $lightGrey;
+    padding: 5px;
     display: inline-block;
+
+    &:hover {
+        border: 1px solid $blue;
+    }
     
     .thumbnail {
+        height: 250px;
+        border-bottom: 1px solid #000;
+
         img {
             width: 100%;
-            border-bottom: 1px solid #000;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
         }
     }
     
@@ -175,6 +186,17 @@ nav {
 
 @media (max-width: 480px) {
     .project {
+        width: 100%;
+    }
+}
+
+.carousel {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: $grey;
+    border-radius: 0.5em;
+
+    & > img {
         width: 100%;
     }
 }
