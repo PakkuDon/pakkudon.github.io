@@ -1,5 +1,6 @@
 angular.module('Portfolio').controller('ProjectController', 
-['$routeParams', '$http', function($routeParams, $http) {
+['$routeParams', '$http', '$location', '$anchorScroll',  
+function($routeParams, $http, $location, $anchorScroll) {
     var self = this;
     var project = {};
     
@@ -17,4 +18,7 @@ angular.module('Portfolio').controller('ProjectController',
     this.getProject = function() {
         return project;
     }
+
+    $location.hash('details');
+    $anchorScroll();
 }]);
