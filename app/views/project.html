@@ -4,9 +4,16 @@
         <header class="text-center">
             <h1 class="title" ng-bind="project.name"></h1>
             <em>{{ project.categories.join(', ') }}</em>
-            <div class="carousel">
-                <img ng-src="dist/img/portfolio/{{ project.image_set[0] }}" alt="snapshot of project" />
-            </div>
+            <ul class="carousel" rn-carousel rn-carousel-index="carouselIndex" rn-carousel-auto-slide>
+                <li ng-repeat="image in project.image_set">
+                    <div ng-style="{ 'height': '100%', 
+                        'background-image': 'url(\'dist/img/portfolio/{{ image }}\')', 
+                        'background-size': 'cover' }">
+                    </div>
+                </li>
+            </ul>
+            <div rn-carousel-indicators ng-if="project.image_set.length > 1" 
+                slides="project.image_set" rn-carousel-index="carouselIndex"></div>
             <div>
                 {{ project.company }}
             </div>

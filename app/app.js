@@ -1,5 +1,7 @@
 // Initialize modules
-var app = angular.module('Portfolio', ['ngRoute']);
+var app = angular.module('Portfolio', ['ngRoute', 'angular-carousel']);
+
+// Configure routes
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
