@@ -21,6 +21,10 @@ html, body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin-bottom: 40px;
 }
@@ -65,7 +69,6 @@ nav {
     
     a {
         color: $lightGrey;
-        text-decoration: none;
         display: block;
         
         &:hover {
@@ -93,7 +96,6 @@ nav {
     
     a {
         color: $lightGrey;
-        text-decoration: none;
     }
     
     .fa {
@@ -143,6 +145,10 @@ nav {
 
     &:hover {
         border: 1px solid $blue;
+
+        .name {
+            color: $blue;
+        }
     }
     
     .thumbnail {
@@ -162,10 +168,12 @@ nav {
         font-weight: bold;
         padding: 5px 0px;
         color: $darkBlue;
-
-        &:hover {
-            color: $blue;
-        }
+    }
+    
+    .links {
+        padding: 5px;
+        background-color: $lightGrey;
+        text-align: right;
     }
 }
 
