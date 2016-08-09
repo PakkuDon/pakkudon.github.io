@@ -7,6 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 // Minify library files
 gulp.task('vendor', function() {
     return gulp.src([
+        'bower_components/jquery/dist/jquery.min.js',
         'bower_components/angular/angular.min.js',
         'bower_components/angular-route/angular-route.min.js',
         'bower_components/angular-carousel/dist/angular-carousel.js',

@@ -1,6 +1,6 @@
 angular.module('Portfolio').controller('ProjectController', 
-['$routeParams', '$http', '$location', '$anchorScroll',  
-function($routeParams, $http, $location, $anchorScroll) {
+['$routeParams', '$http',  
+function($routeParams, $http) {
     var self = this;
     var project = {};
     
@@ -19,6 +19,6 @@ function($routeParams, $http, $location, $anchorScroll) {
         return project;
     }
 
-    $location.hash('details');
-    $anchorScroll();
+    // Scroll to project details
+    $('body').animate({ scrollTop: $('#details').offset().top }, 'fast');
 }]);

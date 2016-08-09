@@ -11,11 +11,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
     <body ng-app="Portfolio">
-        <nav>
-            <ul>
-                <li><a href="./#/#home">Home</a></li>
-                <li><a href="./#/#about">About</a></li>
-                <li><a href="./#/#projects">Projects</a></li>
+        <nav ng-controller="NavigationController as navCtrl">
+            <!-- Render nav contents based on current route -->
+            <ul ng-if="navCtrl.path == '/'">
+                <li><a ng-click="navCtrl.scrollTo('#home')">Home</a></li>
+                <li><a ng-click="navCtrl.scrollTo('#about')">About</a></li>
+                <li><a ng-click="navCtrl.scrollTo('#projects')">Projects</a></li>
+            </ul>
+            <ul ng-if="navCtrl.path.indexOf('/project/') >= 0">
+                <li><a href='./#/'>Home</a></li>
+                <li><a ng-click="navCtrl.scrollTo('#details')">Project details</a></li>
             </ul>
         </nav>
         <section id="home" class="fill-screen align-center text-center">
@@ -42,6 +47,7 @@
         <div ng-view></div>
         <script src="dist/js/vendor.js"></script>
         <script src="app/app.js"></script>
+        <script src="app/controllers/NavigationController.js"></script>
         <script src="app/controllers/SkillsetController.js"></script>
         <script src="app/controllers/ProjectsController.js"></script>
         <script src="app/controllers/ProjectController.js"></script>
