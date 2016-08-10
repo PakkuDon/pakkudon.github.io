@@ -49,7 +49,8 @@ nav {
   color: #EEE;
   position: fixed;
   width: 100%;
-  text-align: right; }
+  text-align: right;
+  z-index: 10; }
   nav a {
     color: #EEE;
     display: block; }
@@ -60,6 +61,10 @@ nav {
     nav ul li {
       display: inline-block;
       padding: 10px 20px; }
+
+#toggle-navbar,
+label[for='toggle-navbar'] {
+  display: none; }
 
 #home {
   background-color: #222;
@@ -95,7 +100,7 @@ nav {
   padding: 20px; }
 
 .project-list {
-  text-align: auto; }
+  text-align: center; }
 
 .project {
   width: 350px;
@@ -137,13 +142,25 @@ nav {
   .tag:hover {
     background-color: #69C; }
 
-@media (max-width: 480px) {
-  .project {
-    width: 100%; } }
-
 .carousel {
   width: 100%;
   padding: 10px 15px;
   background-color: #888;
   border-radius: 0.5em;
   height: 400px; }
+
+div.rn-carousel-indicator span {
+  color: #222; }
+  div.rn-carousel-indicator span.active {
+    color: #69C; }
+
+@media (max-width: 480px) {
+  label[for='toggle-navbar'] {
+    display: block;
+    padding: 10px 20px; }
+  .project {
+    width: 100%; }
+  nav #toggle-navbar:checked ~ ul li {
+    display: block; }
+  nav #toggle-navbar ~ ul li {
+    display: none; } }

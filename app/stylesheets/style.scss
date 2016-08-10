@@ -66,6 +66,7 @@ nav {
     position: fixed;
     width: 100%;
     text-align: right;
+    z-index: 10;
     
     a {
         color: $lightGrey;
@@ -83,6 +84,11 @@ nav {
             padding: 10px 20px;
         }
     }
+}
+
+#toggle-navbar,
+label[for='toggle-navbar'] {
+    display: none;
 }
 
 #home {
@@ -133,7 +139,7 @@ nav {
 }
 
 .project-list {
-    text-align: auto;
+    text-align: center;
 }
 
 .project {
@@ -192,16 +198,40 @@ nav {
     }
 }
 
-@media (max-width: 480px) {
-    .project {
-        width: 100%;
-    }
-}
-
 .carousel {
     width: 100%;
     padding: 10px 15px;
     background-color: $grey;
     border-radius: 0.5em;
     height: 400px;
+}
+
+div.rn-carousel-indicator {
+    span {
+        color: $darkGrey;
+        &.active {
+            color: $blue;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    label[for='toggle-navbar'] {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    nav {
+        #toggle-navbar:checked ~ ul li {
+            display: block;
+        }
+
+        #toggle-navbar ~ ul li {
+            display: none;
+        }
+    } 
 }
