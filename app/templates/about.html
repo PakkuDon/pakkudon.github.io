@@ -1,0 +1,31 @@
+<section id="about">
+    <div class="container">
+        <h1 class="title text-center">About</h1>
+        <div>
+            <h2>Languages</h2>
+            <div class="tag-list" ng-repeat="skillGroup in aboutCtrl.getLanguages()">
+                <h3>{{ skillGroup.level }}: </h3>
+                <div class="tag" ng-repeat="language in skillGroup.items">{{ language }}</div>
+            </div>
+        </div>
+        <div>
+            <h2>Frameworks / Libraries</h2>
+            <div class="tag-list" ng-repeat="skillGroup in aboutCtrl.getFrameworks()">
+                <h3>{{ skillGroup.level }}: </h3>
+                <div class="tag" ng-repeat="framework in skillGroup.items">{{ framework }}</div>
+            </div>
+        </div>
+        <div>
+            <h2>Tools</h2>
+            <div class="tag-list">
+                <div class="tag" ng-repeat="tool in aboutCtrl.getTools()">{{ tool }}</div>
+            </div>
+        </div>
+        <div>
+            <h2>Misc.</h2>
+            <div class="tag-list">
+                <div class="tag" ng-repeat="item in aboutCtrl.getGeneralSkills()">{{ item }}</div>
+            </div>
+        </div>
+    </div>
+</section>

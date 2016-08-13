@@ -5,11 +5,11 @@ var app = angular.module('Portfolio', ['ngRoute', 'angular-carousel']);
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'app/views/home.html'
+            templateUrl: 'app/templates/home.html'
         })
         .when('/project/:id', {
-            controller: 'ProjectController as projectCtrl',
-            templateUrl: 'app/views/project.html'
+            controller: 'ProjectDetailsController as projectCtrl',
+            templateUrl: 'app/templates/project-details.html'
         })
         .otherwise({
             redirectTo: '/'

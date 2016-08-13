@@ -1,4 +1,4 @@
-angular.module('Portfolio').controller('ProjectsController', 
+angular.module('Portfolio').controller('ProjectGridController', 
 ['$http', function($http) {
     var self = this;
     var projects = [];

@@ -11,20 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
     <body ng-app="Portfolio">
-        <nav ng-controller="NavigationController as navCtrl">
-            <label for="toggle-navbar">Menu</label>
-            <input id="toggle-navbar" type="checkbox" />
-            <!-- Render nav contents based on current route -->
-            <ul ng-if="navCtrl.path == '/'">
-                <li><a ng-click="navCtrl.scrollTo('#home')">Home</a></li>
-                <li><a ng-click="navCtrl.scrollTo('#about')">About</a></li>
-                <li><a ng-click="navCtrl.scrollTo('#projects')">Projects</a></li>
-            </ul>
-            <ul ng-if="navCtrl.path.indexOf('/project/') >= 0">
-                <li><a href='./#/'>Home</a></li>
-                <li><a ng-click="navCtrl.scrollTo('#details')">Project details</a></li>
-            </ul>
-        </nav>
+        <nav-bar></nav-bar>
         <section id="home" class="fill-screen align-center text-center">
             <div class="container">
                 <h1 class="name">PakkuDon</h1>

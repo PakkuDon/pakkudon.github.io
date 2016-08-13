@@ -1,4 +1,4 @@
-angular.module('Portfolio').controller('ProjectController', 
+angular.module('Portfolio').controller('ProjectDetailsController', 
 ['$routeParams', '$http',  
 function($routeParams, $http) {
     var self = this;

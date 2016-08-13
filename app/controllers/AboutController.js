@@ -1,4 +1,4 @@
-angular.module('Portfolio').controller('SkillsetController', 
+angular.module('Portfolio').controller('AboutController', 
 ['$http', function($http) {
     var self = this;
     var skillset = {};
