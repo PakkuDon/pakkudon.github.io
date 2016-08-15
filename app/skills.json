@@ -3,19 +3,19 @@
     {
       "level": "Proficient in",
       "items" :[
-        "JavaScript", "HTML", "CSS", "Java"
+        "JavaScript", "HTML", "CSS"
       ]
     },
     {
       "level": "Some experience with",
       "items" :[
-        "C#", "PHP", "MySQL"
+        "C#", "Java", "PHP", "MySQL"
       ]
     },
     {
       "level": "Dabbled in",
       "items" :[
-        "Python", "Bash", "XML", "XPath"
+        "Python", "Bash"
       ]
     }
   ],
@@ -28,13 +28,13 @@
     {
       "level": "Some experience with",
       "items" :[
-        "jQuery", "AngularJS", "React", "ASP.NET MVC"
+        "jQuery", "React", "AngularJS", "Sass", "ASP.NET MVC"
       ]
     },
     {
       "level": "Dabbled in",
       "items" :[
-        "Bootstrap", "Jasmine", "Node.js", "Express", "D3.js", "Entity Framework"
+        "Bootstrap", "Node.js", "Express", "D3.js", "MongoDB", "Jasmine", "Entity Framework"
       ]
     }
   ],
