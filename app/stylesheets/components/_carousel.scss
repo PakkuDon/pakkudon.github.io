@@ -1,0 +1,16 @@
+.carousel {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: $grey;
+    border-radius: 0.5em;
+    height: 400px;
+}
+
+div.rn-carousel-indicator {
+    span {
+        color: $darkGrey;
+        &.active {
+            color: $blue;
+        }
+    }
+}

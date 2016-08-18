@@ -1,0 +1,47 @@
+nav {
+    background-color: $black;
+    color: $lightGrey;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    z-index: 10;
+    
+    a {
+        color: $lightGrey;
+        display: block;
+        
+        &:hover {
+            color: $lightBlue;
+        }
+    }
+    
+    ul {
+        margin: 0;
+        li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+    }
+}
+
+#toggle-navbar,
+label[for='toggle-navbar'] {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    label[for='toggle-navbar'] {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    nav {
+        #toggle-navbar:checked ~ ul li {
+            display: block;
+        }
+
+        #toggle-navbar ~ ul li {
+            display: none;
+        }
+    } 
+}

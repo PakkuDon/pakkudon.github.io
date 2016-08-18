@@ -40,31 +40,28 @@ body {
   margin: auto;
   width: 80%; }
 
+.title {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase; }
+
+.subheading {
+  font-size: 200%; }
+
 section .title {
   padding-top: 60px;
   font-size: 1.75em; }
 
-nav {
-  background-color: #000;
-  color: #EEE;
-  position: fixed;
+.carousel {
   width: 100%;
-  text-align: right;
-  z-index: 10; }
-  nav a {
-    color: #EEE;
-    display: block; }
-    nav a:hover {
-      color: #9CF; }
-  nav ul {
-    margin: 0; }
-    nav ul li {
-      display: inline-block;
-      padding: 10px 20px; }
+  padding: 10px 15px;
+  background-color: #888;
+  border-radius: 0.5em;
+  height: 400px; }
 
-#toggle-navbar,
-label[for='toggle-navbar'] {
-  display: none; }
+div.rn-carousel-indicator span {
+  color: #222; }
+  div.rn-carousel-indicator span.active {
+    color: #69C; }
 
 #home {
   background-color: #222;
@@ -88,13 +85,6 @@ label[for='toggle-navbar'] {
     text-transform: uppercase;
     font-size: 400%; }
 
-.title {
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase; }
-
-.subheading {
-  font-size: 200%; }
-
 .profiles {
   margin: 10px;
   padding: 20px; }
@@ -102,33 +92,37 @@ label[for='toggle-navbar'] {
 .project-list {
   text-align: center; }
 
-.project {
+.project-stub {
   width: 350px;
   margin: 10px;
   border: 1px solid #EEE;
   padding: 5px;
   display: inline-block; }
-  .project:hover {
+  .project-stub:hover {
     border: 1px solid #69C; }
-    .project:hover .name {
+    .project-stub:hover .name {
       color: #69C; }
-  .project .thumbnail {
+  .project-stub .thumbnail {
     height: 250px;
     border-bottom: 1px solid #000; }
-    .project .thumbnail img {
+    .project-stub .thumbnail img {
       width: 100%;
       height: 100%;
       background-size: cover;
       background-position: center; }
-  .project .name {
+  .project-stub .name {
     text-align: center;
     font-weight: bold;
     padding: 5px 0px;
     color: #369; }
-  .project .links {
+  .project-stub .links {
     padding: 5px;
     background-color: #EEE;
     text-align: right; }
+
+@media (max-width: 480px) {
+  .project-stub {
+    width: 100%; } }
 
 .tag {
   background-color: #369;
@@ -142,24 +136,32 @@ label[for='toggle-navbar'] {
   .tag:hover {
     background-color: #69C; }
 
-.carousel {
+nav {
+  background-color: #000;
+  color: #EEE;
+  position: fixed;
   width: 100%;
-  padding: 10px 15px;
-  background-color: #888;
-  border-radius: 0.5em;
-  height: 400px; }
+  text-align: right;
+  z-index: 10; }
+  nav a {
+    color: #EEE;
+    display: block; }
+    nav a:hover {
+      color: #9CF; }
+  nav ul {
+    margin: 0; }
+    nav ul li {
+      display: inline-block;
+      padding: 10px 20px; }
 
-div.rn-carousel-indicator span {
-  color: #222; }
-  div.rn-carousel-indicator span.active {
-    color: #69C; }
+#toggle-navbar,
+label[for='toggle-navbar'] {
+  display: none; }
 
 @media (max-width: 480px) {
   label[for='toggle-navbar'] {
     display: block;
     padding: 10px 20px; }
-  .project {
-    width: 100%; }
   nav #toggle-navbar:checked ~ ul li {
     display: block; }
   nav #toggle-navbar ~ ul li {

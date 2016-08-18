@@ -32,7 +32,7 @@ gulp.task('bundle', function() {
 
 // Compile Sass stylesheets
 gulp.task('sass', function() {
-    return gulp.src('./app/stylesheets/*.scss')
+    return gulp.src('./app/stylesheets/style.scss')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(gulp.dest('./dist/css'));
@@ -40,7 +40,7 @@ gulp.task('sass', function() {
 
 // Recompile project files on change
 gulp.task('watch', function() {
-    gulp.watch('app/stylesheets/*.scss', ['sass']);
+    gulp.watch('app/stylesheets/**/*.scss', ['sass']);
     gulp.watch('app/**/*.js', ['bundle']);
 });
 
