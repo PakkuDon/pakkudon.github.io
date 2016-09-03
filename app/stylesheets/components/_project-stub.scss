@@ -1,7 +1,7 @@
 .project-stub {
     width: 350px;
     margin: 10px;
-    border: 1px solid $lightGrey;
+    border: 1px solid lighten($grey, 40%);
     padding: 5px;
     display: inline-block;
 
@@ -29,12 +29,12 @@
         text-align: center;
         font-weight: bold;
         padding: 5px 0px;
-        color: $darkBlue;
+        color: darken($blue, 20%);
     }
     
     .links {
         padding: 5px;
-        background-color: $lightGrey;
+        background-color: lighten($grey, 40%);
         text-align: right;
     }
 }

@@ -64,20 +64,20 @@ section .title {
   height: 400px; }
 
 div.rn-carousel-indicator span {
-  color: #222; }
+  color: #222222; }
   div.rn-carousel-indicator span.active {
     color: #69C; }
 
 #home {
-  background-color: #222;
+  background-color: #222222;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../dist/img/bg-park.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../dist/img/bg-park.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: #EEE; }
+  color: #eeeeee; }
   #home a {
-    color: #EEE; }
+    color: #eeeeee; }
   #home .fa {
     font-size: 4em;
     margin: 10px 25px; }
@@ -106,7 +106,7 @@ div.rn-carousel-indicator span {
 .project-stub {
   width: 350px;
   margin: 10px;
-  border: 1px solid #EEE;
+  border: 1px solid #eeeeee;
   padding: 5px;
   display: inline-block; }
   .project-stub:hover {
@@ -125,10 +125,10 @@ div.rn-carousel-indicator span {
     text-align: center;
     font-weight: bold;
     padding: 5px 0px;
-    color: #369; }
+    color: #336699; }
   .project-stub .links {
     padding: 5px;
-    background-color: #EEE;
+    background-color: #eeeeee;
     text-align: right; }
 
 @media (max-width: 480px) {
@@ -136,7 +136,7 @@ div.rn-carousel-indicator span {
     width: 100%; } }
 
 .tag {
-  background-color: #369;
+  background-color: #336699;
   color: #FFF;
   border: transparent;
   border-radius: 0.5em;
@@ -149,16 +149,16 @@ div.rn-carousel-indicator span {
 
 nav {
   background-color: #000;
-  color: #EEE;
+  color: #eeeeee;
   position: fixed;
   width: 100%;
   text-align: right;
   z-index: 10; }
   nav a {
-    color: #EEE;
+    color: #eeeeee;
     display: block; }
     nav a:hover {
-      color: #9CF; }
+      color: #b3cce6; }
   nav ul {
     margin: 0; }
     nav ul li {

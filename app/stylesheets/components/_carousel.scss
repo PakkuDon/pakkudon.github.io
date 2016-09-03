@@ -8,7 +8,7 @@
 
 div.rn-carousel-indicator {
     span {
-        color: $darkGrey;
+        color: darken($grey, 40%);
         &.active {
             color: $blue;
         }
