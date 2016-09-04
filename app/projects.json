@@ -15,8 +15,11 @@
       "right-click-dash-4.PNG",
       "right-click-dash-5.PNG"
     ],
-    "description": "Helped develop admin dashboard used to review lesson activity",
+    "description": "Helped build an admin dashboard that would be used to review past lessons delivered at the Right Click tech sessions.",
     "notes": [
+      "First time attending a hackathon",
+      "Responsible for working on parts of the front end such as the lesson index and statistics page",
+      "Added additional API end points to Express.js back end"
     ],
     "tags": [
       "JavaScript", "React", "D3.js"
@@ -41,7 +44,7 @@
       "fcc-quote.PNG",
       "fcc-react-1.PNG"
     ],
-    "description": "",
+    "description": "Worked through some projects on Free Code Camp. Portfolio still in progress.",
     "notes": [
     ],
     "tags": [
@@ -62,13 +65,16 @@
     "image_set": [
       "flyto-1.PNG"
     ],
-    "description": "",
+    "description": "FlyTo aims to help passengers save time by predicting the likelihood of a flight being delayed based on weather conditions at flight endpoints.",
     "notes": [
+      "Project built in response to 'Clear For Take Off', an aeronautics-themed challenge at NASA Space Apps 2016",
+      "Responsible for building front end based off of a mock up provided by designer. Focused on the look and feel of the website while another developer worked on functionality",
+      "Project received the Galactic Impact Award for the Melbourne chapter of this hackathon"
     ],
     "tags": [
       "JavaScript", "React", "Sass"
     ],
-    "website": "",
+    "website": "https://2016.spaceappschallenge.org/challenges/aero/clear-for-take-off/projects/flyto",
     "source_code": "https://github.com/Space-naps/ui"
   },
   {
@@ -83,8 +89,9 @@
     "image_set": [
       "a4d-1.PNG"
     ],
-    "description": "Built a site where people could submit recordings of themselves as signatures to a petition.",
+    "description": "Built a petition website for Australia for Dolphins. Described as 'Change.org with videos', the site allowed users to record and upload a short video for a petition directed to Mike Baird to end dolphin captivity in New South Wales.",
     "notes": [
+      "Responsible for building front end based off of a mock up provided by designer"
     ],
     "tags": [
       "JavaScript", "React", "Sass"

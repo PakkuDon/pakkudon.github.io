@@ -9,7 +9,7 @@
     {
       "level": "Some experience with",
       "items" :[
-        "C#", "Java", "PHP", "MySQL"
+        "C#", "Java", "PHP", "SQL"
       ]
     },
     {
@@ -28,18 +28,18 @@
     {
       "level": "Some experience with",
       "items" :[
-        "jQuery", "React", "AngularJS", "Sass", "ASP.NET MVC"
+        "jQuery", "Bootstrap", "React", "AngularJS", "Sass", "ASP.NET MVC"
       ]
     },
     {
       "level": "Dabbled in",
       "items" :[
-        "Bootstrap", "Node.js", "Express", "D3.js", "MongoDB", "Jasmine", "Entity Framework"
+        "Node.js", "Express", "D3.js", "MongoDB", "Jasmine", "Entity Framework"
       ]
     }
   ],
   "tools": [
-    "Git", "Visual Studio", "Eclipse", "Vim"
+    "Git", "Visual Studio", "Gulp", "Eclipse", "Vim"
   ],
   "general": [
     "Design patterns", "Test-driven development", "UML"
