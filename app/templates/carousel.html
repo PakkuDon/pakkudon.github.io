@@ -3,6 +3,12 @@
         <div ng-style="{ 'height': '100%', 
             'background-image': 'url(\'dist/img/portfolio/{{ image }}\')', 
             'background-size': 'cover' }">
+            <button type="button" 
+                class="enlarge-image"
+                title="Enlarge image"
+                ng-click="carouselCtrl.showImage('dist/img/portfolio/' + image)">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+            </button>
         </div>
     </li>
 </ul>

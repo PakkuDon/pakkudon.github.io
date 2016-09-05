@@ -63,6 +63,19 @@ section .title {
   border-radius: 0.5em;
   height: 400px; }
 
+.enlarge-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  color: #000;
+  opacity: 0.5;
+  background-color: transparent;
+  border: transparent;
+  font-size: 2em; }
+  .enlarge-image:hover {
+    opacity: 1; }
+
 div.rn-carousel-indicator span {
   color: #222222; }
   div.rn-carousel-indicator span.active {
@@ -99,6 +112,36 @@ div.rn-carousel-indicator span {
     font-size: 3em; }
   #home .subheading {
     font-size: 1.75em; } }
+
+.lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: none; }
+  .lightbox img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 5%; }
+  .lightbox.visible {
+    display: block; }
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  color: #FFF;
+  opacity: 0.5;
+  background-color: transparent;
+  border: transparent;
+  font-size: 2em; }
+  .close-button:hover {
+    opacity: 1; }
 
 .project-list {
   text-align: center; }

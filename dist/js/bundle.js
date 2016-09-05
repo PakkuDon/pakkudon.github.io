@@ -25,6 +25,11 @@ angular.module('Portfolio').component('carousel', {
         images: '='
     }
 });
+angular.module('Portfolio').component('lightbox', {
+    templateUrl: 'app/templates/lightbox.html',
+    controller: 'LightBoxController',
+    controllerAs: 'lightboxCtrl'
+});
 angular.module('Portfolio').component('navBar', {
     templateUrl: 'app/templates/navbar.html',
     controller: 'NavigationController',
@@ -68,7 +73,30 @@ angular.module('Portfolio').controller('AboutController', ['$http', function ($h
         return skillset.general || [];
     };
 }]);
-angular.module('Portfolio').controller('CarouselController', [function () {}]);
+angular.module('Portfolio').controller('CarouselController', ['$rootScope', function ($rootScope) {
+    this.showImage = function (imageUrl) {
+        $rootScope.$broadcast('imageSelect', imageUrl);
+    };
+}]);
+angular.module('Portfolio').controller('LightBoxController', ['$scope', function ($scope) {
+    var self = this;
+    this.visible = false;
+    this.image = '';
+
+    this.setVisible = function (isVisible) {
+        self.visible = isVisible;
+    };
+
+    this.setImage = function (imageUrl) {
+        self.image = imageUrl;
+    };
+
+    // Display image on broadcast
+    $scope.$on('imageSelect', function (event, image) {
+        self.setImage(image);
+        self.setVisible(true);
+    });
+}]);
 angular.module('Portfolio').controller('NavigationController', ['$scope', '$location', function ($scope, $location) {
     var self = this;
     self.path = $location.path();

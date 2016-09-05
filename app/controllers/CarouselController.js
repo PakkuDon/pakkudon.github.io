@@ -1,4 +1,6 @@
 angular.module('Portfolio').controller('CarouselController', 
-[function() {
-
+['$rootScope', function($rootScope) {
+    this.showImage = function(imageUrl) {
+        $rootScope.$broadcast('imageSelect', imageUrl);
+    }
 }]);
