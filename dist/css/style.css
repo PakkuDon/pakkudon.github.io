@@ -178,6 +178,9 @@ div.rn-carousel-indicator span {
   .project-stub {
     width: 100%; } }
 
+.tag-list {
+  margin: 2% 0%; }
+
 .tag {
   background-color: #336699;
   color: #FFF;

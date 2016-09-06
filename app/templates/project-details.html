@@ -3,6 +3,7 @@
     <div class="container">
         <header class="text-center">
             <h1 class="title" ng-bind="project.name"></h1>
+            <p ng-bind="project.company"></p>
             <em>{{ project.categories.join(', ') }}</em>
             <carousel images="project.image_set"></carousel>
             <div>
@@ -20,6 +21,9 @@
             <ul>
                 <li ng-repeat="note in project.notes">{{ note }}</li>
             </ul>
+            <div class="tag-list">
+                <div class="tag" ng-repeat="tag in project.tags" ng-bind="tag"></div>
+            </div>
         </summary>
         <footer>
             <a class="tag" target="_blank" ng-href="{{ project.website }}" ng-show="project.website">
