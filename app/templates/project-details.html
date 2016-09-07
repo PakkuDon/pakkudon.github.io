@@ -4,22 +4,22 @@
         <header class="text-center">
             <h1 class="title" ng-bind="project.name"></h1>
             <p ng-bind="project.company"></p>
-            <em>{{ project.categories.join(', ') }}</em>
+            <em ng-bind="project.categories.join(', ')"></em>
             <carousel images="project.image_set"></carousel>
             <div>
-                {{ project.company }}
-            </div>
-            <div>
-                <time>{{ project.start_date }} - {{ project.end_date }}</time>
+                <time>
+                    <span ng-bind="project.start_date"></span> - <span ng-bind="project.end_date"></span>
+                </time>
             </div>
         </header>
         <summary>
             <h2>
                 Description
             </h2>
-            {{ project.description }}
+            <div ng-bind="project.description">
+            </div>
             <ul>
-                <li ng-repeat="note in project.notes">{{ note }}</li>
+                <li ng-repeat="note in project.notes" ng-bind="note"></li>
             </ul>
             <div class="tag-list">
                 <div class="tag" ng-repeat="tag in project.tags" ng-bind="tag"></div>
