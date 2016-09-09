@@ -144,11 +144,11 @@ div.rn-carousel-indicator span {
     opacity: 1; }
 
 .project-list {
-  text-align: center; }
+  margin: auto; }
 
 .project-stub {
-  width: 350px;
-  margin: 10px;
+  width: 30%;
+  margin: 1%;
   border: 1px solid #eeeeee;
   padding: 5px;
   display: inline-block; }
@@ -168,13 +168,18 @@ div.rn-carousel-indicator span {
     text-align: center;
     font-weight: bold;
     padding: 5px 0px;
-    color: #336699; }
+    color: #336699;
+    height: 55px; }
   .project-stub .links {
     padding: 5px;
     background-color: #eeeeee;
     text-align: right; }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  .project-stub {
+    width: 47%; } }
+
+@media screen and (max-width: 480px) {
   .project-stub {
     width: 100%; } }
 

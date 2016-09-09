@@ -1,6 +1,6 @@
 .project-stub {
-    width: 350px;
-    margin: 10px;
+    width: 30%;
+    margin: 1%;
     border: 1px solid lighten($grey, 40%);
     padding: 5px;
     display: inline-block;
@@ -30,6 +30,7 @@
         font-weight: bold;
         padding: 5px 0px;
         color: darken($blue, 20%);
+        height: 55px;
     }
     
     .links {
@@ -39,7 +40,13 @@
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
+    .project-stub {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .project-stub {
         width: 100%;
     }
