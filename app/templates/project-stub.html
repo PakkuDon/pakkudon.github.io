@@ -1,7 +1,7 @@
 <div class="project-stub">
     <a ng-href="#/project/{{ projectStubCtrl.project.id }}">
         <div class="thumbnail">
-            <img ng-style="{ 'background-image': 'url(\'dist/img/portfolio/{{ projectStubCtrl.project.image_set[0] }}\')' }" />
+            <img ng-style="{ 'background-image': 'url(\'{{ projectStubCtrl.project.image_set[0] }}\')' }" />
         </div>
         <div class="name" ng-bind="projectStubCtrl.project.name"></div>
     </a>

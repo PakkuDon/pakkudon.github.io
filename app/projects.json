@@ -9,11 +9,11 @@
     "start_date": "5 Dec 2015",
     "end_date": "Ongoing",
     "image_set": [
-      "right-click-dash-1.PNG",
-      "right-click-dash-2.PNG",
-      "right-click-dash-3.PNG",
-      "right-click-dash-4.PNG",
-      "right-click-dash-5.PNG"
+      "dist/img/portfolio/right-click-dash-1.PNG",
+      "dist/img/portfolio/right-click-dash-2.PNG",
+      "dist/img/portfolio/right-click-dash-3.PNG",
+      "dist/img/portfolio/right-click-dash-4.PNG",
+      "dist/img/portfolio/right-click-dash-5.PNG"
     ],
     "description": "Helped build an admin dashboard that would be used to review past lessons delivered at the Right Click tech sessions.",
     "notes": [
@@ -37,12 +37,12 @@
     "start_date": "5 Mar 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "fcc-d3-1.PNG",
-      "fcc-d3-3.PNG",
-      "fcc-d3-4.PNG",
-      "fcc-d3-5.PNG",
-      "fcc-quote.PNG",
-      "fcc-react-1.PNG"
+      "dist/img/portfolio/fcc-d3-1.PNG",
+      "dist/img/portfolio/fcc-d3-3.PNG",
+      "dist/img/portfolio/fcc-d3-4.PNG",
+      "dist/img/portfolio/fcc-d3-5.PNG",
+      "dist/img/portfolio/fcc-quote.PNG",
+      "dist/img/portfolio/fcc-react-1.PNG"
     ],
     "description": "Worked through some projects on Free Code Camp. Portfolio still in progress.",
     "notes": [
@@ -63,7 +63,7 @@
     "start_date": "23 Apr 2016",
     "end_date": "24 Apr 2016",
     "image_set": [
-      "flyto-1.PNG"
+      "dist/img/portfolio/flyto-1.PNG"
     ],
     "description": "FlyTo aims to help passengers save time by predicting the likelihood of a flight being delayed based on weather conditions at flight endpoints.",
     "notes": [
@@ -87,7 +87,7 @@
     "start_date": "4 Jun 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "a4d-1.PNG"
+      "dist/img/portfolio/a4d-1.PNG"
     ],
     "description": "Built a petition website for Australia for Dolphins. Described as 'Change.org with videos', the site allowed users to record and upload a short video for a petition directed to Mike Baird to end dolphin captivity in New South Wales.",
     "notes": [
