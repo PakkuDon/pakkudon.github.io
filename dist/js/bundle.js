@@ -1,151 +1,50 @@
-// Initialize modules
-var app = angular.module('Portfolio', ['ngRoute', 'angular-carousel']);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
 
-// Configure routes
-app.config(function ($routeProvider) {
-    $routeProvider.when('/', {
-        templateUrl: 'app/templates/home.html'
-    }).when('/project/:id', {
-        controller: 'ProjectDetailsController as projectCtrl',
-        templateUrl: 'app/templates/project-details.html'
-    }).otherwise({
-        redirectTo: '/'
-    });
-});
-angular.module('Portfolio').component('about', {
-    templateUrl: 'app/templates/about.html',
-    controller: 'AboutController',
-    controllerAs: 'aboutCtrl'
-});
-angular.module('Portfolio').component('carousel', {
-    templateUrl: 'app/templates/carousel.html',
-    controller: 'CarouselController',
-    controllerAs: 'carouselCtrl',
-    bindings: {
-        images: '='
-    }
-});
-angular.module('Portfolio').component('lightbox', {
-    templateUrl: 'app/templates/lightbox.html',
-    controller: 'LightBoxController',
-    controllerAs: 'lightboxCtrl'
-});
-angular.module('Portfolio').component('navBar', {
-    templateUrl: 'app/templates/navbar.html',
-    controller: 'NavigationController',
-    controllerAs: 'navCtrl'
-});
-angular.module('Portfolio').component('projectGrid', {
-    templateUrl: 'app/templates/project-grid.html',
-    controller: 'ProjectGridController',
-    controllerAs: 'gridCtrl'
-});
-angular.module('Portfolio').component('projectStub', {
-    templateUrl: 'app/templates/project-stub.html',
-    controller: 'ProjectStubController',
-    controllerAs: 'projectStubCtrl',
-    bindings: {
-        project: '='
-    }
-});
-angular.module('Portfolio').controller('AboutController', ['$http', function ($http) {
-    var self = this;
-    var skillset = {};
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
 
-    // Get skillset data
-    $http.get('app/skills.json').then(function (response) {
-        skillset = response.data;
-    });
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
 
-    this.getLanguages = function () {
-        return skillset.languages || [];
-    };
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
 
-    this.getFrameworks = function () {
-        return skillset.frameworks || [];
-    };
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 
-    this.getTools = function () {
-        return skillset.tools || [];
-    };
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
 
-    this.getGeneralSkills = function () {
-        return skillset.general || [];
-    };
-}]);
-angular.module('Portfolio').controller('CarouselController', ['$rootScope', function ($rootScope) {
-    this.showImage = function (imageUrl) {
-        $rootScope.$broadcast('imageSelect', imageUrl);
-    };
-}]);
-angular.module('Portfolio').controller('LightBoxController', ['$scope', function ($scope) {
-    var self = this;
-    this.visible = false;
-    this.image = '';
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
 
-    this.setVisible = function (isVisible) {
-        self.visible = isVisible;
-    };
 
-    this.setImage = function (imageUrl) {
-        self.image = imageUrl;
-    };
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
 
-    // Display image on broadcast
-    $scope.$on('imageSelect', function (event, image) {
-        self.setImage(image);
-        self.setVisible(true);
-    });
-}]);
-angular.module('Portfolio').controller('NavigationController', ['$scope', '$location', function ($scope, $location) {
-    var self = this;
-    self.path = $location.path();
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
 
-    // Scroll to element matching given selector
-    this.scrollTo = function (selector) {
-        var $target = $(selector);
-        $('body').animate({ scrollTop: $target.offset().top }, 'slow');
-    };
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
 
-    // Update navbar contents on route change
-    $scope.$on('$locationChangeStart', function (next, current) {
-        self.path = $location.path();
-    });
-}]);
-angular.module('Portfolio').controller('ProjectDetailsController', ['$routeParams', '$http', function ($routeParams, $http) {
-    var self = this;
-    var project = {};
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ function(module, exports) {
 
-    // Get project data
-    $http.get('app/projects.json').then(function (response) {
-        var projects = response.data;
-        for (var i = 0; i < projects.length; i++) {
-            if (projects[i].id === $routeParams.id) {
-                project = projects[i];
-                break;
-            }
-        }
-    });
+	console.log(`Hello this is ${ 'dog' }`);
 
-    this.getProject = function () {
-        return project;
-    };
-
-    // Scroll to project details
-    $('body').animate({ scrollTop: $('#details').offset().top }, 'fast');
-}]);
-angular.module('Portfolio').controller('ProjectGridController', ['$http', function ($http) {
-    var self = this;
-    var projects = [];
-
-    // Get project data
-    $http.get('app/projects.json').then(function (response) {
-        projects = response.data;
-    });
-
-    this.getProjects = function () {
-        return projects;
-    };
-}]);
-angular.module('Portfolio').controller('ProjectStubController', [function () {}]);
-//# sourceMappingURL=bundle.js.map
+/***/ }
+/******/ ]);
