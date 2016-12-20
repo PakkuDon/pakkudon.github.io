@@ -1,0 +1,32 @@
+.carousel {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: $grey;
+    border-radius: 0.5em;
+    height: 400px;
+}
+
+.enlarge-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    color: #000;
+    opacity: 0.5;
+    background-color: transparent;
+    border: transparent;
+    font-size: 2em;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+div.rn-carousel-indicator {
+    span {
+        color: darken($grey, 40%);
+        &.active {
+            color: $blue;
+        }
+    }
+}

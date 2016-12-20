@@ -1,7 +1,8 @@
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/index.js',
   output: {
-    path: __dirname + '/dist/js',
+    path: __dirname + '/dist',
+    publicPath: '/dist/',
     filename: 'bundle.js'
   },
   module: {
@@ -15,6 +16,10 @@ module.exports = {
         test: /\.s?css$/,
         loaders: ['style', 'css', 'sass'],
         include: __dirname + '/src'
+      },
+      {
+        test: /\.((png)|(jpg))$/,
+        loaders: ['file']
       }
     ]
   }
