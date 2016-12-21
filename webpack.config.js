@@ -20,6 +20,11 @@ module.exports = {
       {
         test: /\.((png)|(jpg))$/,
         loaders: ['file']
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars',
+        include: __dirname + '/src'
       }
     ]
   }
