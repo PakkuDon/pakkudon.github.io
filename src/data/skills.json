@@ -1,0 +1,13 @@
+{
+  "languages": [
+    "JavaScript", "HTML", "CSS", "Ruby", "SQL", "C#", "Java"
+  ],
+  "frameworks": [
+    "React", "Node.js", "Express", "Sass", "MongoDB",
+    "jQuery", "Bootstrap", "D3.js", "Sinatra", "Ruby on Rails", "ActiveRecord",
+    "AngularJS", "Jasmine"
+  ],
+  "other": [
+    "Git", "Heroku", "Webpack", "Test-driven Development", "Design Patterns"
+  ]
+}
