@@ -1,9 +1,10 @@
 # Portfolio
 
-## Tools used:
-- AngularJS 1.5
-- Angular Carousel
-- Sass
-- Bower, NPM
+**[Link](https://pakkudon.github.io)**
 
-[Link](https://pakkudon.github.io)
+## Tools used:
+- HTML
+- CSS + SASS
+- JavaScript (ES2015)
+- Webpack
+- JSON data files
