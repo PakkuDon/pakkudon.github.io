@@ -2,12 +2,24 @@
   <div class="thumbnail">
     <img style="background-image: url('{{ project.image_set.[0] }}')" />
   </div>
-  <div class="name">{{ project.name }}</div>
-  <div class="links">
+  <div class="details">
+    <h3 class="name">{{ project.name }}</h3>
+    <p>{{ project.company }}</p>
+    <p>
+      <time>{{ project.start_date }} - {{ project.end_date }}</time>
+    </p>
+    <p>{{ project.description }}</p>
+    <ul>
+      {{#each project.notes}}
+      <li>{{ this }}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <footer class="links">
     {{#each project.links}}
     <a class="tag" title="{{ title }}" target="_blank" href="{{ url }}">
-      <i class="fa fa-external-link" aria-hidden="true"></i>
+      <i class="fa fa-external-link" aria-hidden="true"></i> {{ title }}
     </a>
     {{/each}}
-  </div>
+  </footer>
 </div>

@@ -1,18 +1,12 @@
 .project-stub {
-    width: 30%;
     margin: 1%;
     border: 1px solid lighten($grey, 40%);
     padding: 5px;
-    display: inline-block;
 
     &:hover {
         border: 1px solid $blue;
-
-        .name {
-            color: $blue;
-        }
     }
-    
+
     .thumbnail {
         height: 250px;
         border-bottom: 1px solid #000;
@@ -24,7 +18,7 @@
             background-position: center;
         }
     }
-    
+
     .name {
         text-align: center;
         font-weight: bold;
@@ -32,7 +26,7 @@
         color: darken($blue, 20%);
         height: 55px;
     }
-    
+
     .links {
         padding: 5px;
         background-color: lighten($grey, 40%);
@@ -40,14 +34,19 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .project-stub {
-        width: 47%;
-    }
-}
+@media (min-width: 960px) {
+  .thumbnail,
+  .details {
+    display: inline-block;
+    vertical-align: top;
+  }
 
-@media screen and (max-width: 480px) {
-    .project-stub {
-        width: 100%;
-    }
+  .thumbnail {
+    width: 30%;
+  }
+
+  .details {
+    width: 65%;
+    padding: 1em;
+  }
 }
