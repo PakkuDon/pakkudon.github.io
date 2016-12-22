@@ -1,37 +1,37 @@
 .project-stub {
-    margin: 1%;
-    border: 1px solid lighten($grey, 40%);
-    padding: 5px;
+  margin: 1%;
+  border: 1px solid lighten($grey, 40%);
+  padding: 5px;
+
+  .thumbnail {
+    height: 250px;
+    border: 1px solid transparent;
+
+    img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
 
     &:hover {
-        border: 1px solid $blue;
+      border: 1px solid $accent;
     }
+  }
 
-    .thumbnail {
-        height: 250px;
-        border-bottom: 1px solid #000;
+  .name {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0px;
+    color: darken($accent, 20%);
+    margin: 0.5em;
+  }
 
-        img {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-        }
-    }
-
-    .name {
-        text-align: center;
-        font-weight: bold;
-        padding: 5px 0px;
-        color: darken($blue, 20%);
-        height: 55px;
-    }
-
-    .links {
-        padding: 5px;
-        background-color: lighten($grey, 40%);
-        text-align: right;
-    }
+  .links {
+    padding: 5px;
+    background-color: lighten($grey, 40%);
+    text-align: right;
+  }
 }
 
 @media (min-width: 960px) {
@@ -47,6 +47,5 @@
 
   .details {
     width: 65%;
-    padding: 1em;
   }
 }

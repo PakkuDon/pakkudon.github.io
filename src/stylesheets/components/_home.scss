@@ -1,49 +1,47 @@
 #home {
-    background-color: darken($grey, 40%);
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url('./../images/bg-park.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-color: transparent;
+  color: lighten($grey, 40%);
+  height: 600px;
+  height: 90vh;
+  margin-top: 0;
+
+  a {
     color: lighten($grey, 40%);
+  }
 
-    a {
-        color: lighten($grey, 40%);
+  .fa {
+    font-size: 4em;
+    margin: 10px 25px;
+
+    &:hover {
+      color: $accent;
     }
+  }
 
-    .fa {
-        font-size: 4em;
-        margin: 10px 25px;
+  hr {
+    border: 1px solid #FFF;
+  }
 
-        &:hover {
-            color: $blue;
-        }
-    }
-
-    hr {
-        border: 1px solid $white;
-    }
-
-    .name {
-        font-family: 'Lato', sans-serif;
-        text-transform: uppercase;
-        font-size: 4em;
-    }
+  .name {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+  }
 }
 
 .profiles {
-    margin: 10px;
-    padding: 20px;
+  margin: 10px;
+  padding: 20px;
 }
 
 @media (max-width: 480px) {
-    #home {
-        .name {
-            font-size: 3em;
-        }
-
-        .subheading {
-            font-size: 1.75em;
-        }
+  #home {
+    .name {
+      font-size: 3em;
     }
+
+    .subheading {
+      font-size: 1.75em;
+    }
+  }
 }
