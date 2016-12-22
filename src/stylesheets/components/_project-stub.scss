@@ -3,7 +3,7 @@
   border: 1px solid lighten($grey, 40%);
   padding: 5px;
 
-  .thumbnail {
+  .project-thumbnail {
     height: 250px;
     border: 1px solid transparent;
 
@@ -35,13 +35,13 @@
 }
 
 @media (min-width: 960px) {
-  .thumbnail,
+  .project-thumbnail,
   .details {
     display: inline-block;
     vertical-align: top;
   }
 
-  .thumbnail {
+  .project-thumbnail {
     width: 30%;
   }
 

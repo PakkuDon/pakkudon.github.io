@@ -7,7 +7,7 @@ var LightBox = (function() {
   const showImage = () => {
     var currentImage = imageSet[current];
     if (imageElem && currentImage) {
-      imageElem.innerHTML = `<img src="${currentImage}" />`;
+      imageElem.src = currentImage;
     }
   }
 
@@ -19,6 +19,7 @@ var LightBox = (function() {
 
       var leftButton = document.createElement('button');
       leftButton.type = 'button';
+      leftButton.classList.add('prev-button');
       leftButton.addEventListener('click', e => {
         this.prev();
       });
@@ -26,6 +27,7 @@ var LightBox = (function() {
 
       var rightButton = document.createElement('button');
       rightButton.type = 'button';
+      rightButton.classList.add('next-button');
       rightButton.addEventListener('click', e => {
         this.next();
       });
@@ -33,6 +35,7 @@ var LightBox = (function() {
 
       var closeButton = document.createElement('button');
       closeButton.type = 'button';
+      closeButton.classList.add('close-button');
       closeButton.addEventListener('click', e => {
         this.close();
       });
@@ -59,7 +62,7 @@ var LightBox = (function() {
       }
       showImage();
     },
-    setImageSet: images => {
+    setImages: images => {
       imageSet = images;
       current = 0;
       showImage();
