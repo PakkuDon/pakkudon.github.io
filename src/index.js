@@ -3,6 +3,7 @@ require('./stylesheets/style.scss');
 import fetch from 'isomorphic-fetch';
 import projectTemplate from './templates/project-stub.hbs';
 import tagListTemplate from './templates/tag-list.hbs';
+import LightBox from './lightbox';
 
 // Load project data
 fetch('/src/data/projects.json')
@@ -25,3 +26,6 @@ fetch('/src/data/skills.json')
     }));
     skillListsElem.insertAdjacentHTML('beforeend', tagLists.join(''));
   });
+
+// Initialize lightbox
+LightBox.initialize(document.querySelector('.lightbox'));
