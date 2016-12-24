@@ -124,7 +124,8 @@
     "start_date": "October 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "src/images/placeholder.png"
+      "src/images/portfolio/duck-hunt-1.png",
+      "src/images/portfolio/duck-hunt-2.png"
     ],
     "description": "A clone of a NES game with the same name. Players take turns shooting ducks to earn points. Game ends when player fails to hit required number of targets in a round.",
     "notes": [
@@ -153,7 +154,9 @@
     "start_date": "November 2016",
     "end_date": "November 2016",
     "image_set": [
-      "src/images/placeholder.png"
+      "src/images/portfolio/console-log-1.png",
+      "src/images/portfolio/console-log-2.png",
+      "src/images/portfolio/console-log-3.png"
     ],
     "description": "Initially supposed to be a clone of Medium.com, but instead turned into a generic blogging app. Users can make posts, comment on other posts and follow users. Posts support markdown format.",
     "notes": [
@@ -181,7 +184,9 @@
     "start_date": "November 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "src/images/placeholder.png"
+      "src/images/portfolio/use-my-kitchen-1.png",
+      "src/images/portfolio/use-my-kitchen-2.png",
+      "src/images/portfolio/use-my-kitchen-3.png"
     ],
     "description": "Like AirBnB but for finding venues to host a dinner party. Users can post their kitchens and take bookings at these kitchens from other users. Users can also review the kitchens that they have stayed at and message other users to confirm details.",
     "notes": [
@@ -210,7 +215,9 @@
     "start_date": "December 2016",
     "end_date": "December 2016",
     "image_set": [
-      "src/images/placeholder.png"
+      "src/images/portfolio/wdi-conf-1.png",
+      "src/images/portfolio/wdi-conf-2.png",
+      "src/images/portfolio/wdi-conf-3.png"
     ],
     "description": "WDIConf is a conference run by Web Development Immersive students. Our team built a brochure site where people could register for the event and join a mentorship program that would pair them with other attendees based on their interests.",
     "notes": [
