@@ -4,6 +4,3 @@ bower_components/
 
 # Log files
 *.log
-
-# Generated files
-dist/
