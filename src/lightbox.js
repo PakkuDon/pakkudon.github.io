@@ -17,33 +17,20 @@ var LightBox = (function() {
       lightBox = element;
       imageElem = lightBox.querySelector('img');
 
-      var leftButton = document.createElement('button');
-      leftButton.type = 'button';
-      leftButton.classList.add('prev-button');
+      var leftButton = lightBox.querySelector('.prev-button');
       leftButton.addEventListener('click', e => {
         this.prev();
       });
-      leftButton.innerHTML = '<i class="fa fa-chevron-left" aria-hidden="true"></i>';
 
-      var rightButton = document.createElement('button');
-      rightButton.type = 'button';
-      rightButton.classList.add('next-button');
+      var rightButton = lightBox.querySelector('.next-button');
       rightButton.addEventListener('click', e => {
         this.next();
       });
-      rightButton.innerHTML = '<i class="fa fa-chevron-right" aria-hidden="true"></i>';
 
-      var closeButton = document.createElement('button');
-      closeButton.type = 'button';
-      closeButton.classList.add('close-button');
+      var closeButton = lightBox.querySelector('.close-button')
       closeButton.addEventListener('click', e => {
         this.close();
       });
-      closeButton.innerHTML = `<i class="fa fa-times-circle" aria-hidden="true"></i>`;
-
-      lightBox.insertBefore(leftButton, lightBox.firstChild);
-      lightBox.appendChild(rightButton);
-      lightBox.appendChild(closeButton);
     },
     show: () => {
       lightBox.classList.add('visible');
