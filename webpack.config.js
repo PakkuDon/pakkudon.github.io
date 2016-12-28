@@ -18,7 +18,10 @@ module.exports = {
       },
       {
         test: /\.((png)|(jpg))$/,
-        loaders: ['file']
+        loaders: [
+          'file',
+          'image-webpack?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 80}}'
+        ]
       },
       {
         test: /\.hbs$/,
