@@ -22,8 +22,9 @@ a {
 body {
   margin-bottom: 40px;
   background-color: darken($accent, 40%);
-  background: linear-gradient(darken($accent, 40%), darken($accent, 20%));
-  background-image: url('./../images/bg-park-dim.jpg');
+  background-image:
+    url('./../images/bg-park-dim.jpg'),
+    linear-gradient(darken($accent, 40%), darken($accent, 20%));
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
