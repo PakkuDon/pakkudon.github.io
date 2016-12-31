@@ -74,3 +74,15 @@ section {
     padding: 1em;
   }
 }
+
+@keyframes fadeIn {
+  from {
+    top: -10px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
