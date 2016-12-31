@@ -34,6 +34,12 @@ var LightBox = (function() {
       closeButton.addEventListener('click', e => {
         this.close();
       });
+
+      lightBox.addEventListener('click', e => {
+        if (e.target !== imageElem && e.target.nodeName !== 'BUTTON') {
+          this.close();
+        }
+      })
     },
     show: () => {
       lightBox.classList.add('visible');
