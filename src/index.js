@@ -4,9 +4,18 @@ import fetch from 'isomorphic-fetch';
 import projectTemplate from './templates/project-stub.hbs';
 import tagListTemplate from './templates/tag-list.hbs';
 import LightBox from './lightbox';
+import smoothScroll from 'smoothscroll';
 
 // Initialize lightbox
 LightBox.initialize(document.querySelector('.lightbox'));
+
+// Enable smooth scroll on nav links
+document.querySelector('nav').addEventListener('click', e => {
+  if (e.target.matches('a')) {
+    var targetElem = document.querySelector(e.target.dataset['scrollTarget']);
+    smoothScroll(targetElem);
+  }
+});
 
 // Load project data
 fetch('/src/data/projects.json')

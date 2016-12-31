@@ -6,7 +6,8 @@
   "dependencies": {
     "handlebars": "^4.0.6",
     "isomorphic-fetch": "^2.2.1",
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^5.0.0",
+    "smoothscroll": "^0.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.0",
