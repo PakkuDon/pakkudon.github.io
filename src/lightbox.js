@@ -1,3 +1,5 @@
+import lightboxTemplate from './templates/lightbox.hbs';
+
 var LightBox = (function() {
   var lightBox = null;
   var imageElem = null;
@@ -15,6 +17,7 @@ var LightBox = (function() {
     // Set event handlers
     initialize: function(element) {
       lightBox = element;
+      lightBox.innerHTML = lightboxTemplate();
       imageElem = lightBox.querySelector('img');
 
       var leftButton = lightBox.querySelector('.prev-button');
