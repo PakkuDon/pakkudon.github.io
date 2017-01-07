@@ -10,10 +10,12 @@ nav {
   a {
     color: lighten($grey, 40%);
     display: block;
+    transition: 0.5s;
 
     &:hover,
-    &:active {
-      color: lighten($accent, 20%);
+    &:active,
+    &:focus {
+      color: $accent;
     }
   }
 

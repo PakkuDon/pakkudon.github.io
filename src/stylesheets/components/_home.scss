@@ -7,15 +7,18 @@
 
   a {
     color: lighten($grey, 40%);
+    transition: 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $accent;
+    }
   }
 
   .fa {
-    font-size: 4em;
+    font-size: 3.5em;
     margin: 10px 25px;
-
-    &:hover {
-      color: $accent;
-    }
   }
 
   hr {
