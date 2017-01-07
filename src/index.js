@@ -26,11 +26,19 @@ fetch('/src/data/projects.json')
       var html = projectTemplate({ project });
       var tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
-      tempDiv.querySelector('.project-thumbnail')
-        .addEventListener('click', e => {
-          LightBox.setImages(project.image_set);
-          LightBox.show();
-        });
+
+      var showImages = images => {
+        LightBox.setImages(images);
+        LightBox.show();
+      };
+
+      var thumbnail = tempDiv.querySelector('.project-thumbnail');
+      thumbnail.addEventListener('click', () => showImages(project.image_set));
+      thumbnail.addEventListener('keydown', (e) => {
+        if (e.code === 'Space') {
+          showImages(project.image_set);
+        }
+      });
 
       return tempDiv.firstChild;
     });

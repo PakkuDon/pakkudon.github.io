@@ -3,6 +3,9 @@ import lightboxTemplate from './templates/lightbox.hbs';
 var LightBox = (function() {
   var lightBox = null;
   var imageElem = null;
+  var leftButton = null;
+  var rightButton = null;
+  var closeButton = null;
   var imageSet = [];
   var current = 0;
 
@@ -20,20 +23,26 @@ var LightBox = (function() {
       lightBox.innerHTML = lightboxTemplate();
       imageElem = lightBox.querySelector('img');
 
-      var leftButton = lightBox.querySelector('.prev-button');
+      leftButton = lightBox.querySelector('.prev-button');
       leftButton.addEventListener('click', e => {
         this.prev();
       });
 
-      var rightButton = lightBox.querySelector('.next-button');
+      rightButton = lightBox.querySelector('.next-button');
       rightButton.addEventListener('click', e => {
         this.next();
       });
 
-      var closeButton = lightBox.querySelector('.close-button')
+      closeButton = lightBox.querySelector('.close-button')
       closeButton.addEventListener('click', e => {
         this.close();
       });
+      closeButton.addEventListener('keydown', e => {
+        if (e.code === 'Tab') {
+          e.preventDefault();
+          leftButton.focus();
+        }
+      })
 
       lightBox.addEventListener('click', e => {
         if (e.target !== imageElem && e.target.nodeName !== 'BUTTON') {
@@ -43,6 +52,7 @@ var LightBox = (function() {
     },
     show: () => {
       lightBox.classList.add('visible');
+      rightButton.focus();
     },
     close: () => {
       lightBox.classList.remove('visible');
