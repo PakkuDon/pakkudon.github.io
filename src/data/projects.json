@@ -245,7 +245,8 @@
     "start_date": "December 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "src/images/placeholder.png"
+      "src/images/portfolio/casual-gourmet-1.png",
+      "src/images/portfolio/casual-gourmet-2.png"
     ],
     "description": "Casual Gourmet (working name) is a place where people can share their recipes. Users can review or bookmark recipes for later use.",
     "notes": [
