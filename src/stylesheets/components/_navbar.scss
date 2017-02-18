@@ -1,11 +1,12 @@
 nav {
-  background-color: #000;
+  background-color: transparent;
   color: lighten($grey, 40%);
-  position: fixed;
+  position: absolute;
   width: 100%;
   text-align: right;
   z-index: 10;
   top: 0;
+  transition: 0.5s;
 
   a {
     color: lighten($grey, 40%);
@@ -28,6 +29,11 @@ nav {
   }
 }
 
+nav.fixed {
+  background-color: #000;
+  position: fixed;
+}
+
 #toggle-navbar,
 label[for='toggle-navbar'] {
   display: none;
@@ -40,6 +46,7 @@ label[for='toggle-navbar'] {
   }
 
   nav {
+    background-color: #000;
     #toggle-navbar:checked ~ ul li {
       display: block;
     }

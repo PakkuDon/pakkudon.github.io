@@ -9,11 +9,24 @@ import smoothScroll from 'smoothscroll';
 // Initialize lightbox
 LightBox.initialize(document.querySelector('.lightbox'));
 
+const navbar = document.querySelector('nav');
 // Enable smooth scroll on nav links
-document.querySelector('nav').addEventListener('click', e => {
+navbar.addEventListener('click', e => {
   if (e.target.matches('a')) {
     var targetElem = document.querySelector(e.target.dataset['scrollTarget']);
     smoothScroll(targetElem);
+  }
+});
+
+// Enable sticky nav on scroll
+const header = document.querySelector('#home');
+console.dir(header);
+window.addEventListener('scroll', e => {
+  if (window.scrollY > navbar.offsetTop) {
+    navbar.classList.add('fixed')
+  }
+  else {
+    navbar.classList.remove('fixed');
   }
 });
 
