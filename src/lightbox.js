@@ -37,10 +37,18 @@ var LightBox = (function() {
       closeButton.addEventListener('click', e => {
         this.close();
       });
+
+      // Retain focus in lightbox on tab press
       closeButton.addEventListener('keydown', e => {
         if (e.code === 'Tab') {
           e.preventDefault();
           leftButton.focus();
+        }
+      });
+      leftButton.addEventListener('keydown', e => {
+        if (e.code === 'Tab' && e.shiftKey) {
+          e.preventDefault();
+          closeButton.focus();
         }
       })
 
