@@ -20,7 +20,6 @@ navbar.addEventListener('click', e => {
 
 // Enable sticky nav on scroll
 const header = document.querySelector('#home');
-console.dir(header);
 window.addEventListener('scroll', e => {
   if (window.scrollY > navbar.offsetTop) {
     navbar.classList.add('fixed')
