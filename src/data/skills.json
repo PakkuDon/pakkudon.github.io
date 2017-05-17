@@ -1,13 +1,35 @@
 {
   "languages": [
-    "JavaScript", "HTML", "CSS", "Ruby", "SQL", "C#", "Java"
+    "JavaScript",
+    "Ruby",
+    "HTML",
+    "CSS",
+    "SQL",
+    "C#"
   ],
   "frameworks": [
-    "React", "Node.js", "Express", "Sass", "MongoDB",
-    "jQuery", "Bootstrap", "D3.js", "Sinatra", "Ruby on Rails", "ActiveRecord",
-    "AngularJS", "Jasmine"
+    "React",
+    "Node.js",
+    "Express",
+    "Sass",
+    "MongoDB",
+    "jQuery",
+    "Bootstrap",
+    "D3.js",
+    "Sinatra",
+    "Ruby on Rails",
+    "ActiveRecord",
+    "Jasmine",
+    "Mocha",
+    "Chai",
+    "Enzyme",
+    "Redux"
   ],
   "other": [
-    "Git", "Heroku", "Webpack", "Test-driven Development", "Design Patterns"
+    "Git",
+    "Heroku",
+    "Webpack",
+    "Test-driven Development",
+    "Design Patterns"
   ]
 }
