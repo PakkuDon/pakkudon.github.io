@@ -2,7 +2,8 @@ import lightboxTemplate from './templates/lightbox.hbs';
 
 var LightBox = (function() {
   var lightBox = null;
-  var imageElem = null;
+  var imageContainer = null;
+  var imageElems = null;
   var leftButton = null;
   var rightButton = null;
   var closeButton = null;
@@ -10,10 +11,11 @@ var LightBox = (function() {
   var current = 0;
 
   const showImage = () => {
-    var currentImage = imageSet[current];
-    if (imageElem && currentImage) {
-      imageElem.src = currentImage;
+    const active = lightBox.querySelector('img.active');
+    if (active && imageElems[current] !== active) {
+      active.classList.remove('active');
     }
+    imageElems[current].classList.add('active');
   }
 
   return {
@@ -21,7 +23,8 @@ var LightBox = (function() {
     initialize: function(element) {
       lightBox = element;
       lightBox.innerHTML = lightboxTemplate();
-      imageElem = lightBox.querySelector('img');
+
+      imageContainer = lightBox.querySelector('.image-container');
 
       leftButton = lightBox.querySelector('.prev-button');
       leftButton.addEventListener('click', e => {
@@ -78,6 +81,12 @@ var LightBox = (function() {
     },
     setImages: images => {
       imageSet = images;
+
+      imageContainer.innerHTML = imageSet.map(image => (
+        `<img src="${image}" />`
+      )).join('');
+      imageElems = imageContainer.children;
+
       current = 0;
       showImage();
     }
