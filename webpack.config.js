@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
@@ -6,31 +7,30 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
+        loaders: ['babel-loader'],
         include: __dirname + '/src'
       },
       {
         test: /\.s?css$/,
         loaders: [
-          'style',
-          'css',
-          'postcss',
-          'sass'
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
         ]
       },
       {
         test: /\.((png)|(jpg))$/,
         loaders: [
-          'file',
-          'image-webpack?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 80}}'
-        ]
+          'file-loader',
+        ],
       },
       {
         test: /\.hbs$/,
-        loader: 'handlebars',
+        loader: 'handlebars-loader',
         include: __dirname + '/src'
       }
     ]
