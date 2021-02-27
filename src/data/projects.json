@@ -1,36 +1,5 @@
 [
   {
-    "name": "Right Click - Admin Dashboard",
-    "company": "Random Hacks of Kindness (Summer, 2015)",
-    "categories": [
-      "hackathon", "rhok"
-    ],
-    "start_date": "December 2015",
-    "end_date": "June 2016",
-    "image_set": [
-      "src/images/portfolio/right-click-dash-1.PNG",
-      "src/images/portfolio/right-click-dash-2.PNG",
-      "src/images/portfolio/right-click-dash-3.PNG",
-      "src/images/portfolio/right-click-dash-4.PNG",
-      "src/images/portfolio/right-click-dash-5.PNG"
-    ],
-    "description": "Right Click is a social enterprise that pairs teenagers with seniors for tech lessons. Helped build an admin dashboard that would be used to review past lessons delivered at the Right Click tech sessions.",
-    "notes": [
-      "First time attending a hackathon",
-      "Responsible for working on parts of the front end such as the lesson index and statistics page",
-      "Added additional API end points to Express.js back end"
-    ],
-    "tags": [
-      "JavaScript", "React", "Express", "D3.js"
-    ],
-    "links": [
-      {
-        "title": "GitHub",
-        "url": "https://github.com/RHoKAustralia/rightclick-webapp"
-      }
-    ]
-  },
-  {
     "name": "Free Code Camp Portfolio",
     "company": "",
     "categories": [
@@ -45,7 +14,9 @@
       "src/images/portfolio/fcc-d3-5.PNG",
       "src/images/portfolio/fcc-quote.PNG",
       "src/images/portfolio/fcc-react-1.PNG",
-      "src/images/portfolio/fcc-linkit.png"
+      "src/images/portfolio/fcc-linkit.png",
+      "src/images/portfolio/fcc-pomodoro-1.png",
+      "src/images/portfolio/fcc-pomodoro-2.png"
     ],
     "description": "Free Code Camp is an open source community that teaches people to code full stack JavaScript. Completed some projects from their site. Portfolio still in progress.",
     "notes": [
@@ -92,38 +63,13 @@
     ]
   },
   {
-    "name": "Australia for Dolphins - Video petitions",
-    "company": "Random Hacks of Kindness (Winter, 2016)",
-    "categories": [
-      "hackathon", "rhok"
-    ],
-    "start_date": "4 Jun 2016",
-    "end_date": "Ongoing",
-    "image_set": [
-      "src/images/portfolio/a4d-1.PNG"
-    ],
-    "description": "Australia for Dolphins is an animal welfare group that seeks to end dolphin cruelty. Built a petition website which was as 'Change.org with videos'. The site allowed users to record and upload a short video for a petition directed to Mike Baird to end dolphin captivity in New South Wales.",
-    "notes": [
-      "Responsible for building front end based off of a mock up provided by designer"
-    ],
-    "tags": [
-      "JavaScript", "React", "Node.js", "Express", "Sass"
-    ],
-    "links": [
-      {
-        "title": "GitHub",
-        "url": "https://github.com/RHoKAustralia/australia-4-dolphins"
-      }
-    ]
-  },
-  {
     "name": "Duck Hunt",
     "company": "General Assembly - Web Development Immersive",
     "categories": [
       "wdi"
     ],
     "start_date": "October 2016",
-    "end_date": "Ongoing",
+    "end_date": "December 2016",
     "image_set": [
       "src/images/portfolio/duck-hunt-1.png",
       "src/images/portfolio/duck-hunt-2.png"
@@ -183,7 +129,7 @@
       "wdi"
     ],
     "start_date": "November 2016",
-    "end_date": "Ongoing",
+    "end_date": "November 2016",
     "image_set": [
       "src/images/portfolio/use-my-kitchen-1.png",
       "src/images/portfolio/use-my-kitchen-2.png",
@@ -208,43 +154,13 @@
     ]
   },
   {
-    "name": "WDIConf 2016",
-    "company": "General Assembly - Web Development Immersive",
-    "categories": [
-      "wdi"
-    ],
-    "start_date": "December 2016",
-    "end_date": "December 2016",
-    "image_set": [
-      "src/images/portfolio/wdi-conf-1.png",
-      "src/images/portfolio/wdi-conf-2.png",
-      "src/images/portfolio/wdi-conf-3.png"
-    ],
-    "description": "WDIConf is a conference run by Web Development Immersive students. Our team built a brochure site where people could register for the event and join a mentorship program that would pair them with other attendees based on their interests.",
-    "notes": [
-    ],
-    "tags": [
-      "Node.js", "Express", "PostgreSQL", "jQuery", "Materialize"
-    ],
-    "links": [
-      {
-        "title": "Website",
-        "url": "http://wdi-conf-2016.herokuapp.com/"
-      },
-      {
-        "title": "GitHub",
-        "url": "https://github.com/KerrieBat/wdi9conf"
-      }
-    ]
-  },
-  {
     "name": "Casual Gourmet",
     "company": "General Assembly - Web Development Immersive",
     "categories": [
       "wdi"
     ],
     "start_date": "December 2016",
-    "end_date": "Ongoing",
+    "end_date": "December 2016",
     "image_set": [
       "src/images/portfolio/casual-gourmet-1.png",
       "src/images/portfolio/casual-gourmet-2.png"
@@ -264,6 +180,31 @@
       {
         "title": "GitHub",
         "url": "https://github.com/PakkuDon/casual-gourmet"
+      }
+    ]
+  },
+  {
+    "name": "Pixel Art Gallery",
+    "company": "",
+    "categories": [ "personal", "pixel art", "gallery" ],
+    "start_date": "October 2020",
+    "end_date": "Ongoing",
+    "image_set": [
+      "src/images/portfolio/pixel-art-gallery.png"
+    ],
+    "description": "Collection of pixel art images that I've drawn. Started as a lockdown hobby.",
+    "notes": [],
+    "tags": [
+      "React"
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://pakkudon.github.io/pixel-art-gallery/"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/PakkuDon/pixel-art-gallery"
       }
     ]
   }
