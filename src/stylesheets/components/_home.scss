@@ -30,6 +30,10 @@
     text-transform: uppercase;
     font-size: 4em;
   }
+
+  .container {
+    animation: slideRight ease-in 1s;
+  }
 }
 
 .profiles {
@@ -46,5 +50,17 @@
     .subheading {
       font-size: 1.75em;
     }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
