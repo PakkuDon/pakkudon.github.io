@@ -28,8 +28,8 @@
     "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "build": "webpack -p",
-    "watch": "webpack -d --watch"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "PakkuDon",
   "license": "ISC"
