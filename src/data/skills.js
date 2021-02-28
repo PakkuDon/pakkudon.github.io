@@ -1,4 +1,4 @@
-{
+module.exports = {
   "languages": [
     "JavaScript",
     "Ruby",
