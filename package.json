@@ -27,7 +27,7 @@
     "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "rm -rf dist && webpack",
     "watch": "webpack --watch"
   },
   "author": "PakkuDon",
