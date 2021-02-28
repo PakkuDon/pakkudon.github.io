@@ -10,12 +10,12 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loaders: ['babel-loader'],
+        loader: 'babel-loader',
         include: __dirname + '/src'
       },
       {
         test: /\.s?css$/,
-        loaders: [
+        use: [
           'style-loader',
           'css-loader',
           'postcss-loader',
@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.((png)|(jpg))$/,
-        loaders: [
+        use: [
           'file-loader',
           {
             loader: 'image-webpack-loader',
