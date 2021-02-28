@@ -25,21 +25,7 @@ module.exports = {
       },
       {
         test: /\.((png)|(jpg))$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                quality: 80,
-              },
-              pngquant: {
-                quality: '65-90',
-                speed: 4,
-              },
-            }
-          }
-        ],
+        type: 'asset/resource'
       },
       {
         test: /\.hbs$/,
