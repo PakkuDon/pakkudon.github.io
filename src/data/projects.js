@@ -8,15 +8,15 @@ module.exports = [
     "start_date": "5 Mar 2016",
     "end_date": "Ongoing",
     "image_set": [
-      "src/images/portfolio/fcc-d3-1.PNG",
-      "src/images/portfolio/fcc-d3-3.PNG",
-      "src/images/portfolio/fcc-d3-4.PNG",
-      "src/images/portfolio/fcc-d3-5.PNG",
-      "src/images/portfolio/fcc-quote.PNG",
-      "src/images/portfolio/fcc-react-1.PNG",
-      "src/images/portfolio/fcc-linkit.png",
-      "src/images/portfolio/fcc-pomodoro-1.png",
-      "src/images/portfolio/fcc-pomodoro-2.png"
+      require("../images/portfolio/fcc-d3-1.PNG"),
+      require("../images/portfolio/fcc-d3-3.PNG"),
+      require("../images/portfolio/fcc-d3-4.PNG"),
+      require("../images/portfolio/fcc-d3-5.PNG"),
+      require("../images/portfolio/fcc-quote.PNG"),
+      require("../images/portfolio/fcc-react-1.PNG"),
+      require("../images/portfolio/fcc-linkit.png"),
+      require("../images/portfolio/fcc-pomodoro-1.png"),
+      require("../images/portfolio/fcc-pomodoro-2.png"),
     ],
     "description": "Free Code Camp is an open source community that teaches people to code full stack JavaScript. Completed some projects from their site. Portfolio still in progress.",
     "notes": [
@@ -40,7 +40,7 @@ module.exports = [
     "start_date": "23 Apr 2016",
     "end_date": "24 Apr 2016",
     "image_set": [
-      "src/images/portfolio/flyto-1.PNG"
+      require("../images/portfolio/flyto-1.PNG")
     ],
     "description": "FlyTo aims to help passengers save time by predicting the likelihood of a flight being delayed based on weather conditions at flight endpoints.",
     "notes": [
@@ -71,8 +71,8 @@ module.exports = [
     "start_date": "October 2016",
     "end_date": "December 2016",
     "image_set": [
-      "src/images/portfolio/duck-hunt-1.png",
-      "src/images/portfolio/duck-hunt-2.png"
+      require("../images/portfolio/duck-hunt-1.png"),
+      require("../images/portfolio/duck-hunt-2.png")
     ],
     "description": "A clone of a NES game with the same name. Players take turns shooting ducks to earn points. Game ends when player fails to hit required number of targets in a round.",
     "notes": [
@@ -101,9 +101,9 @@ module.exports = [
     "start_date": "November 2016",
     "end_date": "November 2016",
     "image_set": [
-      "src/images/portfolio/console-log-1.png",
-      "src/images/portfolio/console-log-2.png",
-      "src/images/portfolio/console-log-3.png"
+      require("../images/portfolio/console-log-1.png"),
+      require("../images/portfolio/console-log-2.png"),
+      require("../images/portfolio/console-log-3.png")
     ],
     "description": "Initially supposed to be a clone of Medium.com, but instead turned into a generic blogging app. Users can make posts, comment on other posts and follow users. Posts support markdown format.",
     "notes": [
@@ -131,9 +131,9 @@ module.exports = [
     "start_date": "November 2016",
     "end_date": "November 2016",
     "image_set": [
-      "src/images/portfolio/use-my-kitchen-1.png",
-      "src/images/portfolio/use-my-kitchen-2.png",
-      "src/images/portfolio/use-my-kitchen-3.png"
+      require("../images/portfolio/use-my-kitchen-1.png"),
+      require("../images/portfolio/use-my-kitchen-2.png"),
+      require("../images/portfolio/use-my-kitchen-3.png")
     ],
     "description": "Like AirBnB but for finding venues to host a dinner party. Users can post their kitchens and take bookings at these kitchens from other users. Users can also review the kitchens that they have stayed at and message other users to confirm details.",
     "notes": [
@@ -162,8 +162,8 @@ module.exports = [
     "start_date": "December 2016",
     "end_date": "December 2016",
     "image_set": [
-      "src/images/portfolio/casual-gourmet-1.png",
-      "src/images/portfolio/casual-gourmet-2.png"
+      require("../images/portfolio/casual-gourmet-1.png"),
+      require("../images/portfolio/casual-gourmet-2.png")
     ],
     "description": "Casual Gourmet (working name) is a place where people can share their recipes. Users can review or bookmark recipes for later use.",
     "notes": [
@@ -190,7 +190,7 @@ module.exports = [
     "start_date": "October 2020",
     "end_date": "Ongoing",
     "image_set": [
-      "src/images/portfolio/pixel-art-gallery.png"
+      require("../images/portfolio/pixel-art-gallery.png")
     ],
     "description": "Collection of pixel art images that I've drawn. Started as a lockdown hobby.",
     "notes": [],
