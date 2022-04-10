@@ -1,6 +1,8 @@
 module.exports = {
   "languages": [
     "JavaScript",
+    "TypeScript",
+    "Go",
     "Ruby",
     "HTML",
     "CSS",
@@ -16,6 +18,8 @@ module.exports = {
   ],
   "other": [
     "Git",
+    "Accessibility",
+    "Amazon Web Services (AWS)",
     "Heroku",
     "Webpack",
     "Test-driven Development",
