@@ -12,9 +12,24 @@
 - JSON data files
 
 ## Development
-Run `yarn watch` in the project root to start Webpack in watch mode. This will recompile the files on change. There is no hot-reloading in this project (yet?)
+### Pre-requisites
+- Node v16
+- Yarn
 
-After that open a new terminal and start a web server of your choice in the project root (I used [`live-server`](https://www.npmjs.com/package/live-server) but anything that serves static files will do.)
+### Instructions
+- Clone repository
+- Install dependencies
+```sh
+yarn install
+```
+- Start Webpack in watch mode. This will recompile files on change
+```sh
+yarn watch
+```
+- In separate terminal start a web server of your choice in the `dist/` folder
+```sh
+npx http-server -c-1 dist
+```
 
 ## Updating skills / projects
 The skills list is stored in [`src/data/skills.json`](src/data/skills.json) in the following format
