@@ -192,10 +192,12 @@ module.exports = [
     "image_set": [
       require("../images/portfolio/pixel-art-gallery.png")
     ],
-    "description": "Collection of pixel art images that I've drawn. Started as a lockdown hobby.",
+    "description": "Image gallery containing pixel art images that I've drawn.",
     "notes": [],
     "tags": [
-      "React"
+      "React",
+      "TypeScript",
+      "React Testing Library"
     ],
     "links": [
       {
