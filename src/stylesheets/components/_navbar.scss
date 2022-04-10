@@ -6,12 +6,12 @@ nav {
   text-align: right;
   z-index: 10;
   top: 0;
-  transition: 0.5s;
+  transition: 0.2s;
 
   a {
     color: lighten($grey, 40%);
     display: block;
-    transition: 0.5s;
+    transition: 0.2s;
 
     &:hover,
     &:active,
