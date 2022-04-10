@@ -4,26 +4,15 @@ module.exports = {
     "Ruby",
     "HTML",
     "CSS",
-    "SQL",
-    "C#"
+    "SQL"
   ],
   "frameworks": [
     "React",
-    "Node.js",
-    "Express",
+    "Express.js",
     "Sass",
-    "jQuery",
-    "Bootstrap",
-    "D3.js",
-    "Sinatra",
     "Ruby on Rails",
-    "Jasmine",
-    "Mocha",
-    "Chai",
-    "Enzyme",
     "Jest",
     "React Testing Library",
-    "Redux"
   ],
   "other": [
     "Git",
