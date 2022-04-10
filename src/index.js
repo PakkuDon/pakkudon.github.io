@@ -32,7 +32,7 @@ window.addEventListener('scroll', e => {
 
 // Display project data
 var projectListElem = document.querySelector('.project-list');
-var projectStubs = projects.map(project => {
+var projectStubs = projects.reverse().map(project => {
   var html = projectTemplate({ project });
   var tempDiv = document.createElement('div');
   tempDiv.innerHTML = html;
