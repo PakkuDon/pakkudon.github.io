@@ -210,6 +210,33 @@ module.exports = [
     ]
   },
   {
+    "name": "Password Generator",
+    "company": "",
+    "categories": [ "personal" ],
+    "start_date": "August 2018",
+    "end_date": "October 2018",
+    "image_set": [
+      require("../images/portfolio/password-generator.png")
+    ],
+    "description": "Randomly generates a string of a given length using whichever character sets have been selected.",
+    "notes": [
+      "Implemented in plain HTML, CSS and JavaScript"
+    ],
+    "tags": [
+      "JavaScript",
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://pakkudon.github.io/password-generator"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/PakkuDon/password-generator"
+      }
+    ]
+  },
+  {
     "name": "Pixel Art Gallery",
     "company": "",
     "categories": [ "personal", "pixel art", "gallery" ],
