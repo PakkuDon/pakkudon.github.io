@@ -174,10 +174,6 @@ module.exports = [
     ],
     "links": [
       {
-        "title": "Website",
-        "url": "http://casual-gourmet.herokuapp.com/"
-      },
-      {
         "title": "GitHub",
         "url": "https://github.com/PakkuDon/casual-gourmet"
       }
