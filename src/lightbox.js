@@ -1,4 +1,4 @@
-import lightboxTemplate from './templates/lightbox.hbs';
+const lightboxTemplate = require('./templates/lightbox.hbs');
 
 var LightBox = (function() {
   var lightBox = null;

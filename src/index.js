@@ -1,11 +1,11 @@
 require('normalize.css/normalize.css');
 require('./stylesheets/style.scss');
-import projectTemplate from './templates/project-stub.hbs';
-import tagListTemplate from './templates/tag-list.hbs';
-import LightBox from './lightbox';
-import smoothScroll from 'smoothscroll';
-import projects from './data/projects'
-import skills from './data/skills'
+const projectTemplate = require('./templates/project-stub.hbs');
+const tagListTemplate = require('./templates/tag-list.hbs');
+const LightBox = require('./lightbox');
+const smoothScroll = require('smoothscroll');
+const projects = require('./data/projects');
+const skills = require('./data/skills');
 
 // Initialize lightbox
 LightBox.initialize(document.querySelector('.lightbox'));
