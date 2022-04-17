@@ -1,5 +1,35 @@
 module.exports = [
   {
+    "name": "Maze Builder",
+    "categories": [
+      "self-study",
+    ],
+    "start_date": "27 Nov 2014",
+    "end_date": "1 July 2017",
+    "image_set": [
+      require("../images/portfolio/maze-builder-1.png"),
+      require("../images/portfolio/maze-builder-2.png")
+    ],
+    "description": "A JavaScript port of one of my programming assignments. This page allows users to generate mazes and maze solutions using various algorithms",
+    "notes": [
+      "First personal project that I've ever pushed to Github",
+      "Currently breaks when loaded over HTTPS because it tries to load jQuery or some other libraries over HTTP"
+    ],
+    "tags": [
+      "JavaScript", "Bootstrap"
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "http://pakkudon.github.io/MazeBuilder/"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/PakkuDon/MazeBuilder"
+      }
+    ]
+  },
+  {
     "name": "Free Code Camp Portfolio",
     "company": "",
     "categories": [
