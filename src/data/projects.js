@@ -188,6 +188,35 @@ module.exports = [
     ]
   },
   {
+    "name": "Australian Bird Watchers' Society",
+    "company": "",
+    "start_date": "March 2017",
+    "end_date": "March 2017",
+    "image_set": [
+      require("../images/portfolio/bird-watchers-society-1.png"),
+      require("../images/portfolio/bird-watchers-society-2.png"),
+    ],
+    "description": "A website for a fictitious government agency for bird watchers to report and track sightings of various bird species across Australia.",
+    "notes": [
+      "Implemented in HTML, Sass with PostCSS for auto-prefixing and JavaScript",
+      "Initially built for a coding test for Code For Australia's Fellowship program",
+      "Also used this as an excuse to have a website full of birbs"
+    ],
+    "tags": [
+      "JavaScript", "Sass", "PostCSS"
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://pakkudon.github.io/australian-bird-watchers-society"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/PakkuDon/australian-bird-watchers-society"
+      }
+    ]
+  },
+  {
     "name": "Password Generator",
     "company": "",
     "start_date": "August 2018",
