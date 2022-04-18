@@ -1,9 +1,6 @@
 module.exports = [
   {
     "name": "Maze Builder",
-    "categories": [
-      "self-study",
-    ],
     "start_date": "27 Nov 2014",
     "end_date": "1 July 2017",
     "image_set": [
@@ -31,9 +28,6 @@ module.exports = [
   {
     "name": "Free Code Camp Portfolio",
     "company": "",
-    "categories": [
-      "self-study"
-    ],
     "start_date": "5 Mar 2016",
     "end_date": "Ongoing",
     "image_set": [
@@ -63,9 +57,6 @@ module.exports = [
   {
     "name": "FlyTo",
     "company": "NASA Space Apps 2016",
-    "categories": [
-      "hackathon", "space"
-    ],
     "start_date": "23 Apr 2016",
     "end_date": "24 Apr 2016",
     "image_set": [
@@ -94,9 +85,6 @@ module.exports = [
   {
     "name": "Duck Hunt",
     "company": "General Assembly - Web Development Immersive",
-    "categories": [
-      "wdi"
-    ],
     "start_date": "October 2016",
     "end_date": "December 2016",
     "image_set": [
@@ -124,9 +112,6 @@ module.exports = [
   {
     "name": "console.log",
     "company": "General Assembly - Web Development Immersive",
-    "categories": [
-      "wdi"
-    ],
     "start_date": "November 2016",
     "end_date": "November 2016",
     "image_set": [
@@ -154,9 +139,6 @@ module.exports = [
   {
     "name": "Use My Kitchen",
     "company": "General Assembly - Web Development Immersive",
-    "categories": [
-      "wdi"
-    ],
     "start_date": "November 2016",
     "end_date": "November 2016",
     "image_set": [
@@ -185,9 +167,6 @@ module.exports = [
   {
     "name": "Casual Gourmet",
     "company": "General Assembly - Web Development Immersive",
-    "categories": [
-      "wdi"
-    ],
     "start_date": "December 2016",
     "end_date": "December 2016",
     "image_set": [
@@ -211,7 +190,6 @@ module.exports = [
   {
     "name": "Password Generator",
     "company": "",
-    "categories": [ "personal" ],
     "start_date": "August 2018",
     "end_date": "October 2018",
     "image_set": [
@@ -238,7 +216,6 @@ module.exports = [
   {
     "name": "Pixel Art Gallery",
     "company": "",
-    "categories": [ "personal", "pixel art", "gallery" ],
     "start_date": "October 2020",
     "end_date": "Ongoing",
     "image_set": [

@@ -50,7 +50,6 @@ Similarly projects are stored in [`src/data/projects.json`](src/data/projects.js
   {
     "name": "Project name",
     "company": "Company name",
-    "categories": [ "example tags", "may be used later" ],
     "start_date": "Month Year (eg: December 2018)",
     "end_date": "Month Year (eg: December 2018)",
     "image_set": [
