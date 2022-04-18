@@ -15,7 +15,7 @@ module.exports = [
       "First personal project that I've ever pushed to Github",
     ],
     "tags": [
-      "JavaScript", "Bootstrap"
+      "JavaScript", "jQuery", "Bootstrap"
     ],
     "links": [
       {
