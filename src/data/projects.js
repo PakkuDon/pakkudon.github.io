@@ -2,7 +2,7 @@ module.exports = [
   {
     "name": "Maze Builder",
     "start_date": "27 Nov 2014",
-    "end_date": "1 July 2017",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/maze-builder-1.png"),
       require("../images/portfolio/maze-builder-2.png")
@@ -58,7 +58,7 @@ module.exports = [
     "name": "FlyTo",
     "company": "NASA Space Apps 2016",
     "start_date": "23 Apr 2016",
-    "end_date": "24 Apr 2016",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/flyto-1.PNG")
     ],
@@ -86,7 +86,7 @@ module.exports = [
     "name": "Duck Hunt",
     "company": "General Assembly - Web Development Immersive",
     "start_date": "October 2016",
-    "end_date": "December 2016",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/duck-hunt-1.png"),
       require("../images/portfolio/duck-hunt-2.png")
@@ -113,7 +113,7 @@ module.exports = [
     "name": "console.log",
     "company": "General Assembly - Web Development Immersive",
     "start_date": "November 2016",
-    "end_date": "November 2016",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/console-log-1.png"),
       require("../images/portfolio/console-log-2.png"),
@@ -140,7 +140,7 @@ module.exports = [
     "name": "Use My Kitchen",
     "company": "General Assembly - Web Development Immersive",
     "start_date": "November 2016",
-    "end_date": "November 2016",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/use-my-kitchen-1.png"),
       require("../images/portfolio/use-my-kitchen-2.png"),
@@ -168,7 +168,7 @@ module.exports = [
     "name": "Casual Gourmet",
     "company": "General Assembly - Web Development Immersive",
     "start_date": "December 2016",
-    "end_date": "December 2016",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/casual-gourmet-1.png"),
       require("../images/portfolio/casual-gourmet-2.png")
@@ -191,7 +191,7 @@ module.exports = [
     "name": "Australian Bird Watchers' Society",
     "company": "",
     "start_date": "March 2017",
-    "end_date": "March 2017",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/bird-watchers-society-1.png"),
       require("../images/portfolio/bird-watchers-society-2.png"),
@@ -220,7 +220,7 @@ module.exports = [
     "name": "Password Generator",
     "company": "",
     "start_date": "August 2018",
-    "end_date": "October 2018",
+    "end_date": "",
     "image_set": [
       require("../images/portfolio/password-generator.png")
     ],

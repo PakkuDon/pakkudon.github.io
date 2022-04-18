@@ -6,7 +6,12 @@
     <h3 class="name">{{ project.name }}</h3>
     <p>{{ project.company }}</p>
     <p>
-      <time>{{ project.start_date }} - {{ project.end_date }}</time>
+      <time>
+        {{ project.start_date }}
+        {{#if project.end_date}}
+         - {{ project.end_date }}
+        {{/if}}
+      </time>
     </p>
     <p>{{ project.description }}</p>
     <ul>
