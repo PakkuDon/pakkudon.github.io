@@ -13,7 +13,6 @@ module.exports = [
     "description": "A JavaScript port of one of my programming assignments. This page allows users to generate mazes and maze solutions using various algorithms",
     "notes": [
       "First personal project that I've ever pushed to Github",
-      "Currently breaks when loaded over HTTPS because it tries to load jQuery or some other libraries over HTTP"
     ],
     "tags": [
       "JavaScript", "Bootstrap"
@@ -21,7 +20,7 @@ module.exports = [
     "links": [
       {
         "title": "Website",
-        "url": "http://pakkudon.github.io/MazeBuilder/"
+        "url": "https://pakkudon.github.io/MazeBuilder/"
       },
       {
         "title": "GitHub",
