@@ -1,7 +1,7 @@
 module.exports = [
   {
     "name": "Maze Builder",
-    "start_date": "27 Nov 2014",
+    "start_date": "November 2014",
     "end_date": "",
     "image_set": [
       require("../images/portfolio/maze-builder-1.png"),
@@ -28,7 +28,7 @@ module.exports = [
   {
     "name": "Free Code Camp Portfolio",
     "company": "",
-    "start_date": "5 Mar 2016",
+    "start_date": "March 2016",
     "end_date": "Ongoing",
     "image_set": [
       require("../images/portfolio/fcc-d3-1.PNG"),
@@ -57,7 +57,7 @@ module.exports = [
   {
     "name": "FlyTo",
     "company": "NASA Space Apps 2016",
-    "start_date": "23 Apr 2016",
+    "start_date": "April 2016",
     "end_date": "",
     "image_set": [
       require("../images/portfolio/flyto-1.PNG")
