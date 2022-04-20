@@ -251,11 +251,16 @@ module.exports = [
       require("../images/portfolio/pixel-art-gallery.png")
     ],
     "description": "Image gallery containing pixel art images that I've drawn.",
-    "notes": [],
+    "notes": [
+      "Picked up pixel art towards the end of Victoria's second lockdown",
+      "Initially built in JavaScript, then migrated across to TypeScript in August 2021",
+      "Has Architecture Decision Records"
+    ],
     "tags": [
       "React",
       "TypeScript",
-      "React Testing Library"
+      "React Testing Library",
+      "Architecture Decision Records"
     ],
     "links": [
       {
