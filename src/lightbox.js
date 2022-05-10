@@ -79,8 +79,8 @@ var LightBox = (function() {
       }
       showImage();
     },
-    setImages: images => {
-      imageSet = images;
+    setProject: project => {
+      imageSet = project.image_set;
 
       imageContainer.innerHTML = imageSet.map(image => (
         `<img src="${image}" />`

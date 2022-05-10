@@ -37,16 +37,16 @@ var projectStubs = projects.reverse().map(project => {
   var tempDiv = document.createElement('div');
   tempDiv.innerHTML = html;
 
-  var showImages = images => {
-    LightBox.setImages(images);
+  var showProject = project => {
+    LightBox.setProject(project);
     LightBox.show();
   };
 
   var thumbnail = tempDiv.querySelector('.project-thumbnail');
-  thumbnail.addEventListener('click', () => showImages(project.image_set));
+  thumbnail.addEventListener('click', () => showProject(project));
   thumbnail.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
-      showImages(project.image_set);
+      showProject(project);
     }
   });
 
