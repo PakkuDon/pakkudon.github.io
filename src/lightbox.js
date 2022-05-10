@@ -56,7 +56,7 @@ var LightBox = (function() {
       })
 
       lightBox.addEventListener('click', e => {
-        if (e.target !== imageElem && e.target.nodeName !== 'BUTTON') {
+        if (e.target.nodeName !== "IMG" && e.target.nodeName !== 'BUTTON') {
           this.close();
         }
       })
