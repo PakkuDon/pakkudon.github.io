@@ -248,6 +248,32 @@ module.exports = [
     ]
   },
   {
+    "name": "NASA APOD Screensaver",
+    "company": "",
+    "start_date": "April 2017",
+    "end_date": "May 2017",
+    "image_set": [
+      require("../images/portfolio/nasa-apod-screensaver.png")
+    ],
+    "description": "Rotates through images pulled from NASA's Astronomical Picture of the Day API.",
+    "notes": [
+      "Front-end-only implementation of another past project: https://github.com/PakkuDon/nasa-apod-screensaver-crud"
+    ],
+    "tags": [
+      "React", "Redux"
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://pakkudon.github.io/nasa-apod-screensaver"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/PakkuDon/nasa-apod-screensaver"
+      }
+    ]
+  },
+  {
     "name": "Password Generator",
     "company": "",
     "start_date": "August 2018",
