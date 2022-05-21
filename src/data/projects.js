@@ -57,6 +57,34 @@ module.exports = [
     ]
   },
   {
+    "name": "Conway's Game of Life",
+    "company": "",
+    "start_date": "November 2015",
+    "end_date": "November 2015",
+    "image_set": [
+      require("../images/portfolio/conways-game-of-life-1.png"),
+      require("../images/portfolio/conways-game-of-life-2.png"),
+    ],
+    "description": "Conway's Game of Life written in JavaScript. Was originally started as practice for the 2015 Global Day of Coderetreat.",
+    "notes": [
+      "Implemented in Vanilla JS, HTML and CSS",
+      "Uses HTML5 Canvas"
+    ],
+    "tags": [
+      "JavaScript", "HTML", "CSS"
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://pakkudon.github.io/ConwaysGameOfLife/"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/PakkuDon/ConwaysGameOfLife"
+      }
+    ]
+  },
+  {
     "name": "Free Code Camp Portfolio",
     "company": "",
     "start_date": "March 2016",
