@@ -1,3 +1,34 @@
+/*
+Format:
+{
+  "name": "Project name",
+  "company": "Optional",
+  "start_date": "Month Year",
+  "end_date": "Month Year. Leave blank if ongoing",
+  "image_set": [
+    require("../images/portfolio/filename-1.png"),
+    require("../images/portfolio/filename-2.png"),
+  ],
+  "description": "Description of project.",
+  "notes": [
+    "List of dot points"
+  ],
+  "tags": [
+    "Technology", "Frameworks", "Etc"
+  ],
+  "links": [
+    {
+      "title": "Website",
+      "url": "http://example.com/"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/PakkuDon/pakkudon.github.io"
+    }
+  ]
+}
+*/
+
 module.exports = [
   {
     "name": "Maze Builder",
