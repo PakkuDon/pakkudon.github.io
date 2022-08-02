@@ -110,11 +110,6 @@ section .title {
   color: #69C;
 }
 
-#home .fa {
-  font-size: 3.5em;
-  margin: 10px 25px;
-}
-
 #home hr {
   border: 1px solid #FFF;
 }
@@ -131,6 +126,11 @@ section .title {
 .profiles {
   margin: 10px;
   padding: 20px;
+}
+
+.profiles a {
+  font-size: 3.5em;
+  margin: 10px 25px;
 }
 
 @media (max-width: 480px) {
