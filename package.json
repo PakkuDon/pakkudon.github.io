@@ -5,8 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "handlebars": "^4.0.6",
-    "normalize.css": "^5.0.0",
-    "smoothscroll": "^0.3.0"
+    "normalize.css": "^8.0.1",
+    "smoothscroll": "^0.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
