@@ -1,5 +1,5 @@
 require('normalize.css/normalize.css');
-require('./stylesheets/style.scss');
+require('./stylesheets/style.css');
 const projectTemplate = require('./templates/project-stub.hbs');
 const tagListTemplate = require('./templates/tag-list.hbs');
 const LightBox = require('./lightbox');
