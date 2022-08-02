@@ -1,7 +1,363 @@
-@import 'helpers/variables';
-@import 'base/global';
-@import 'components/home';
-@import 'components/lightbox';
-@import 'components/project-stub';
-@import 'components/tag';
-@import 'components/navbar';
+/* Colors */
+$grey: #888;
+$accent: #69C;
+
+/* Global */
+html {
+  box-sizing: border-box;
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin-bottom: 40px;
+  background-color: darken($accent, 40%);
+  background-image:
+    url('./../images/bg-park-dim.jpg'),
+    linear-gradient(darken($accent, 40%), darken($accent, 20%));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+.subheading {
+  font-size: 2em;
+}
+
+section {
+  margin-bottom: 5em;
+  padding: 2em 1em;
+  background-color: #FFF;
+
+  .title {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    margin: auto;
+    width: auto;
+  }
+
+  section {
+    padding: 1em;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    top: -10px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+/* components/home */
+#home {
+  background-color: transparent;
+  color: lighten($grey, 40%);
+  height: 600px;
+  height: 90vh;
+  margin-top: 0;
+
+  a {
+    color: lighten($grey, 40%);
+    transition: 0.2s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  .fa {
+    font-size: 3.5em;
+    margin: 10px 25px;
+  }
+
+  hr {
+    border: 1px solid #FFF;
+  }
+
+  .name {
+    font-family: 'Lato', sans-serif;
+    font-size: 4em;
+  }
+
+  .container {
+    animation: slideRight ease-in 1s;
+  }
+}
+
+.profiles {
+  margin: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 480px) {
+  #home {
+    .name {
+      font-size: 3em;
+    }
+
+    .subheading {
+      font-size: 1.75em;
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* components/lightbox */
+.lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: none;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+
+  .content {
+    display: flex;
+    height: 100%;
+    margin: 0.5em 2em;
+
+    .image-container {
+      flex: 1;
+      align-self: center;
+
+      img {
+        max-width: 100%;
+        max-height: 80vh;
+        display: none;
+        margin: auto;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  button {
+    color: #FFF;
+    opacity: 0.5;
+    background-color: transparent;
+    border: transparent;
+    font-size: 2em;
+    padding: 1em;
+    vertical-align: top;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      opacity: 1;
+    }
+  }
+
+  &.visible {
+    display: block;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+/* components/project-stub */
+.project-stub {
+  margin: 1%;
+  border: 1px solid lighten($grey, 40%);
+  padding: 5px;
+
+  .project-thumbnail {
+    height: 250px;
+    border: 1px solid transparent;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      border: 1px solid $accent;
+    }
+  }
+
+  .name {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0px;
+    color: darken($accent, 20%);
+    margin: 0.5em;
+  }
+
+  .links {
+    padding: 5px;
+    background-color: lighten($grey, 40%);
+    text-align: right;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-thumbnail,
+  .details {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .project-thumbnail {
+    width: 30%;
+  }
+
+  .details {
+    width: 65%;
+  }
+}
+
+/* components/tag */
+.tag-list {
+  h3 {
+    text-transform: capitalize;
+  }
+}
+
+.tag {
+  background-color: darken($accent, 20%);
+  color: #FFF;
+  border: transparent;
+  border-radius: 0.5em;
+  padding: 5px 10px;
+  margin: 0.2em 0.1em;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $accent;
+  }
+}
+
+/* components/navbar */
+nav {
+  background-color: transparent;
+  color: lighten($grey, 40%);
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  z-index: 10;
+  top: 0;
+  transition: 0.2s;
+
+  a {
+    color: lighten($grey, 40%);
+    display: block;
+    transition: 0.2s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+  }
+}
+
+nav.fixed {
+  background-color: #000;
+  position: fixed;
+}
+
+#toggle-navbar,
+label[for='toggle-navbar'] {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  label[for='toggle-navbar'] {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  nav {
+    background-color: #000;
+    #toggle-navbar:checked ~ ul li {
+      display: block;
+    }
+
+    #toggle-navbar ~ ul li {
+      display: none;
+    }
+  }
+}
+
