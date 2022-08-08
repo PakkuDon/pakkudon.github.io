@@ -22,13 +22,9 @@
 ```sh
 yarn install
 ```
-- Start Webpack in watch mode. This will recompile files on change
+- Start development server
 ```sh
-yarn watch
-```
-- In separate terminal start a web server of your choice in the `dist/` folder
-```sh
-npx http-server -c-1 dist
+yarn dev
 ```
 
 ## Updating skills / projects
