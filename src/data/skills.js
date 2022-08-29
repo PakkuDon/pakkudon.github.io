@@ -20,9 +20,6 @@ module.exports = {
     "Git",
     "Accessibility",
     "Amazon Web Services (AWS)",
-    "Heroku",
     "Webpack",
-    "Test-driven Development",
-    "Design Patterns"
   ]
 }
