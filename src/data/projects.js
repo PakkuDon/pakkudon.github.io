@@ -186,10 +186,6 @@ module.exports = [
     ],
     "links": [
       {
-        "title": "Website",
-        "url": "http://console-log.herokuapp.com/"
-      },
-      {
         "title": "GitHub",
         "url": "https://github.com/PakkuDon/console.log"
       }
@@ -213,10 +209,6 @@ module.exports = [
       "Ruby", "Ruby on Rails", "PostgreSQL", "ActiveRecord"
     ],
     "links": [
-      {
-        "title": "Website",
-        "url": "http://use-my-kitchen.herokuapp.com/"
-      },
       {
         "title": "GitHub",
         "url": "https://github.com/duyen-ho/WDI-Use-My-Kitchen"
