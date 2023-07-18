@@ -10,6 +10,7 @@ module.exports = {
   ],
   "frameworks": [
     "React",
+    "Next.js",
     "Express.js",
     "Sass",
     "Ruby on Rails",
