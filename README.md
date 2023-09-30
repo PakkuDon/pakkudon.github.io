@@ -13,7 +13,7 @@
 
 ## Development
 ### Pre-requisites
-- Node v16
+- Node v18
 - Yarn
 
 ### Instructions
