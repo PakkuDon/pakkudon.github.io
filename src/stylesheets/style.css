@@ -225,6 +225,8 @@ section .title {
   margin: 1%;
   border: 1px solid #eee;
   padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr min-content min-content;
 }
 
 .project-stub .project-thumbnail {
@@ -257,18 +259,9 @@ section .title {
 }
 
 @media (min-width: 960px) {
-  .project-thumbnail,
-  .details {
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  .project-thumbnail {
-    width: 30%;
-  }
-
-  .details {
-    width: 65%;
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

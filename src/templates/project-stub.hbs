@@ -19,8 +19,8 @@
       <li>{{ this }}</li>
       {{/each}}
     </ul>
-    {{> ./tag-list tags=project.tags }}
   </div>
+  {{> ./tag-list tags=project.tags }}
   <footer class="links">
     {{#each project.links}}
     <a class="tag" title="{{ title }}" target="_blank" href="{{ url }}" rel="noopener noreferrer">
