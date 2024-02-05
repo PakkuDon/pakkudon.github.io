@@ -303,11 +303,12 @@ module.exports = [
     "notes": [
       "Picked up pixel art towards the end of Victoria's second lockdown",
       "Initially built in JavaScript, then migrated across to TypeScript in August 2021",
-      "Has Architecture Decision Records"
+      "Migrated to Next.js in July 2023"
     ],
     "tags": [
       "React",
       "TypeScript",
+      "Next.js",
       "React Testing Library",
       "Architecture Decision Records"
     ],
