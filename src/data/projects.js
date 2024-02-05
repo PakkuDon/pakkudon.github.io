@@ -349,5 +349,32 @@ module.exports = [
         "url": "https://github.com/PakkuDon/pixel-art-gallery"
       }
     ]
+  },
+  {
+    "name": "Good Feeds",
+    "company": "",
+    "start_date": "February 2022",
+    "end_date": "Ongoing",
+    "image_set": [
+      require("../images/portfolio/good-feeds.png"),
+    ],
+    "description": "A site to find places to eat or drink at around Melbourne, VIC Australia.",
+    "notes": [
+      "Statically-generated Next.js site hosted on Github Pages",
+      "In development it reads from an API written in Golang"
+    ],
+    "tags": [
+      "React", "TypeScript", "Go", "MySQL", "Next.js", "Architecture Decision Records",
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://pakkudon.github.io/good-feeds/"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/PakkuDon/good-feeds"
+      }
+    ]
   }
 ]
