@@ -328,7 +328,9 @@ module.exports = [
     "start_date": "February 2022",
     "end_date": "Ongoing",
     "image_set": [
-      require("../images/portfolio/good-feeds.png"),
+      require("../images/portfolio/good-feeds-1.png"),
+      require("../images/portfolio/good-feeds-2.png"),
+      require("../images/portfolio/good-feeds-3.png"),
     ],
     "description": "A site to find places to eat or drink at around Melbourne, VIC Australia.",
     "notes": [
