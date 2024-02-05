@@ -114,34 +114,6 @@ module.exports = [
     ]
   },
   {
-    "name": "FlyTo",
-    "company": "NASA Space Apps 2016",
-    "start_date": "April 2016",
-    "end_date": "",
-    "image_set": [
-      require("../images/portfolio/flyto-1.PNG")
-    ],
-    "description": "FlyTo aims to help passengers save time by predicting the likelihood of a flight being delayed based on weather conditions at flight endpoints.",
-    "notes": [
-      "Project built in response to 'Clear For Take Off', an aeronautics-themed challenge at NASA Space Apps 2016",
-      "Responsible for building front end based off of a mock up provided by designer. Focused on the look and feel of the website while another developer worked on functionality",
-      "Project received the Galactic Impact Award for the Melbourne chapter of this hackathon"
-    ],
-    "tags": [
-      "JavaScript", "React", "Sass"
-    ],
-    "links": [
-      {
-        "title": "Website",
-        "url": "https://2016.spaceappschallenge.org/challenges/aero/clear-for-take-off/projects/flyto"
-      },
-      {
-        "title": "GitHub",
-        "url": "https://github.com/Space-naps/ui"
-      }
-    ]
-  },
-  {
     "name": "Duck Hunt",
     "company": "General Assembly - Web Development Immersive",
     "start_date": "October 2016",
