@@ -68,9 +68,7 @@ Similarly projects are stored in [`src/data/projects.json`](src/data/projects.js
 ```
 
 ## Deployment
-Run `npm run build` in the project root to generate a minified JavaScript bundle
-
-New changes pushed to `master` will be made live via Github pages at the demo URL provided above. There currently is no option to deploy from `gh-pages`. [(Source)](https://help.github.com/articles/user-organization-and-project-pages/#user-and-organization-pages-sites)
+Run `npm run deploy` to deploy the latest changes to Github Pages.
 
 ## Project history
 This site was once written in Angular 1 because that was the first frontend framework I had learnt. It has since been migrated away to plain JavaScript with Handlebars templates.
