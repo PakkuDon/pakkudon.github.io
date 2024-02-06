@@ -14,17 +14,16 @@
 ## Development
 ### Pre-requisites
 - Node v20
-- Yarn
 
 ### Instructions
 - Clone repository
 - Install dependencies
 ```sh
-yarn install
+npm install
 ```
 - Start development server
 ```sh
-yarn dev
+npm run dev
 ```
 
 ## Updating skills / projects
@@ -69,7 +68,7 @@ Similarly projects are stored in [`src/data/projects.json`](src/data/projects.js
 ```
 
 ## Deployment
-Run `yarn build` in the project root to generate a minified JavaScript bundle
+Run `npm run build` in the project root to generate a minified JavaScript bundle
 
 New changes pushed to `master` will be made live via Github pages at the demo URL provided above. There currently is no option to deploy from `gh-pages`. [(Source)](https://help.github.com/articles/user-organization-and-project-pages/#user-and-organization-pages-sites)
 

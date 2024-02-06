@@ -27,7 +27,7 @@
   "scripts": {
     "build": "rm -rf dist && webpack",
     "dev": "webpack serve",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "author": "PakkuDon",
