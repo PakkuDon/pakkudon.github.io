@@ -74,3 +74,7 @@ Run `npm run deploy` to deploy the latest changes to Github Pages.
 This site was once written in Angular 1 because that was the first frontend framework I had learnt. It has since been migrated away to plain JavaScript with Handlebars templates.
 
 I felt like a framework may be overkill for what this is doing. Maybe that'll change one day :D
+
+## Architecture Decisions
+
+This project uses [Architecture Decision Records](https://adr.github.io/) to capture the rationale behind architecturally significant decisions. They can be found at [`doc/architecture/decisions`](./doc/architecture/decisions)
