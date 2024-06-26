@@ -1,7 +1,6 @@
 require('normalize.css/normalize.css');
 require('./stylesheets/style.css');
 const projectTemplate = require('./templates/project-stub.hbs');
-const tagListTemplate = require('./templates/tag-list.hbs');
 const LightBox = require('./lightbox');
 const smoothScroll = require('smoothscroll');
 const projects = require('./data/projects');
@@ -58,8 +57,11 @@ projectStubs.forEach(stub => projectListElem.appendChild(stub));
 // Display skill data
 var skillListsElem = document.querySelector('.skill-lists');
 var keys = Object.keys(skills);
-var tagLists = keys.map(key => tagListTemplate({
-  title: key,
-  tags: skills[key]
-}));
+var tagLists = keys.map(key => `
+  <div class="tag-list">
+    <h3>${key}</h3>
+    ${skills[key].map(skill => `<div class="tag">${skill}</div>`).join('')}
+  </div>
+`)
+console.log(tagLists)
 skillListsElem.insertAdjacentHTML('beforeend', tagLists.join(''));

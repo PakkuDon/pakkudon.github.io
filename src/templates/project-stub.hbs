@@ -20,7 +20,11 @@
       {{/each}}
     </ul>
   </div>
-  {{> ./tag-list tags=project.tags }}
+  <div class="tag-list">
+    {{#each project.tags}}
+    <div class="tag">{{ this }}</div>
+    {{/each}}
+  </div>
   <footer class="links">
     {{#each project.links}}
     <a class="tag" title="{{ title }}" target="_blank" href="{{ url }}" rel="noopener noreferrer">
