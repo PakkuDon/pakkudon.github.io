@@ -21,6 +21,5 @@ module.exports = {
     "Git",
     "Accessibility",
     "Amazon Web Services (AWS)",
-    "Webpack",
   ]
 }
