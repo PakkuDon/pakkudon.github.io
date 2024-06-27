@@ -19,7 +19,6 @@ navbar.addEventListener('click', e => {
 });
 
 // Enable sticky nav on scroll
-const header = document.querySelector('#home');
 window.addEventListener('scroll', e => {
   if (window.scrollY > navbar.offsetTop) {
     navbar.classList.add('fixed')
@@ -63,5 +62,4 @@ var tagLists = keys.map(key => `
     ${skills[key].map(skill => `<div class="tag">${skill}</div>`).join('')}
   </div>
 `)
-console.log(tagLists)
 skillListsElem.insertAdjacentHTML('beforeend', tagLists.join(''));
