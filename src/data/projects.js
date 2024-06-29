@@ -351,5 +351,31 @@ module.exports = [
         "url": "https://github.com/PakkuDon/good-feeds"
       }
     ]
-  }
+  },
+  {
+    "name": "Melbourne Events",
+    "company": "",
+    "start_date": "June 2024",
+    "end_date": "Ongoing",
+    "image_set": [
+      require("../images/portfolio/melbourne-events.png"),
+    ],
+    "description": "Calendar showing upcoming events in Melbourne.",
+    "notes": [
+      "Built using FullCalendar",
+    ],
+    "tags": [
+      "HTML", "CSS", "JavaScript",
+    ],
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://pakkudon.github.io/melbourne-events/"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/PakkuDon/melbourne-events"
+      }
+    ]
+  },
 ]
