@@ -3,7 +3,7 @@
 **[Link](https://pakkudon.github.io)**
 
 ## Tools used:
-- HTML + Handlebars
+- HTML + EJS
 - CSS + SASS
 - JavaScript
 - Webpack
@@ -71,7 +71,7 @@ Similarly projects are stored in [`src/data/projects.json`](src/data/projects.js
 Run `npm run deploy` to deploy the latest changes to Github Pages.
 
 ## Project history
-This site was once written in Angular 1 because that was the first frontend framework I had learnt. It has since been migrated away to plain JavaScript with Handlebars templates.
+This site was once written in Angular 1 because that was the first frontend framework I had learnt. It has since been migrated away to plain JavaScript with Handlebars templates, then migrated again to EJS.
 
 I felt like a framework may be overkill for what this is doing. Maybe that'll change one day :D
 

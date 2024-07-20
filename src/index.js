@@ -1,6 +1,7 @@
 require('normalize.css/normalize.css');
 require('./stylesheets/style.css');
-const projectTemplate = require('./templates/project-stub.hbs');
+const ejs = require('ejs/ejs.min.js');
+const projectTemplate = require('./templates/project-stub.ejs');
 const LightBox = require('./lightbox');
 const smoothScroll = require('smoothscroll');
 const projects = require('./data/projects');
@@ -31,7 +32,7 @@ window.addEventListener('scroll', e => {
 // Display project data
 var projectListElem = document.querySelector('.project-list');
 var projectStubs = projects.reverse().map(project => {
-  var html = projectTemplate({ project });
+  var html = ejs.render(projectTemplate, { project })
   var tempDiv = document.createElement('div');
   tempDiv.innerHTML = html;
 

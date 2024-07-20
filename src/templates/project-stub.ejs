@@ -1,0 +1,35 @@
+<div class="project-stub">
+  <div class="project-thumbnail" tabindex="0">
+    <img src="<%= project.image_set[0] %>" alt="<%= project.name %>" loading="lazy" />
+  </div>
+  <div class="details">
+    <h3 class="name"><%= project.name %></h3>
+    <p><%= project.company %></p>
+    <p>
+      <time>
+        <%= project.start_date %>
+        <% if (project.end_date) { %>
+         - <%= project.end_date %>
+        <% } %>
+      </time>
+    </p>
+    <p><%= project.description %></p>
+    <ul>
+      <% for (let note of project.notes) { %>
+      <li><%= note %></li>
+      <% } %>
+    </ul>
+  </div>
+  <div class="tag-list">
+    <% for (let tag of project.tags) { %>
+    <div class="tag"><%= tag %></div>
+    <% } %>
+  </div>
+  <footer class="links">
+    <% for (let link of project.links) { %>
+    <a class="tag" title="<%= link.title %>" target="_blank" href="<%= link.url %>" rel="noopener noreferrer">
+      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> <%= link.title %>
+    </a>
+    <% } %>
+  </footer>
+</div>
