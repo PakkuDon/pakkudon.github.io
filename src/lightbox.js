@@ -20,21 +20,6 @@ var LightBox = (function() {
     // Set event handlers
     initialize: function(element) {
       lightBox = element;
-      lightBox.innerHTML = `
-        <div class="content">
-          <button type="button" class="prev-button">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-          </button>
-          <div class="image-container">
-          </div>
-          <button type="button" class="next-button">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </button>
-        </div>
-        <button type="button" class="close-button">
-          <i class="fa fa-times-circle" aria-hidden="true"></i>
-        </button>
-      `;
 
       imageContainer = lightBox.querySelector('.image-container');
 
