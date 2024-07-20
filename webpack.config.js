@@ -30,6 +30,10 @@ module.exports = {
         test: /\.hbs$/,
         loader: 'handlebars-loader',
         include: __dirname + '/src'
+      },
+      {
+        test: /\.ejs$/,
+        type: 'asset/source'
       }
     ]
   },
